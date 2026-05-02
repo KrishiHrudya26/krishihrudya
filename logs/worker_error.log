@@ -1,0 +1,1414 @@
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 13, in <module>
+    from app.config import settings
+ModuleNotFoundError: No module named 'app'
+2026-04-08 16:29:22,550 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-08 16:29:22,552 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-08 16:29:27,892 [WORKER] INFO Shutting down worker...
+2026-04-08 16:29:28,110 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-08 16:29:28,112 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-08 16:30:04,338 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=device001
+2026-04-08 16:30:04,348 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "device001"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-08 16:30:09,341 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=device001
+2026-04-08 16:30:09,349 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "device001"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-08 16:30:14,343 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=device001
+2026-04-08 16:30:14,353 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "device001"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-08 16:30:19,346 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=device001
+2026-04-08 16:30:19,356 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "device001"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-08 16:30:24,347 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=device001
+2026-04-08 16:30:24,356 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "device001"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-08 16:35:41,343 [WORKER] INFO Shutting down worker...
+2026-04-08 16:35:41,517 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-08 16:35:41,518 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-08 16:35:45,288 [WORKER] INFO Shutting down worker...
+2026-04-08 16:35:45,476 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-08 16:35:45,477 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-08 16:35:55,664 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:35:55,686 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:00,666 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:00,675 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:05,669 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:05,680 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:10,672 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:10,682 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:15,677 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-08 16:36:15,688 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-09 06:49:58,300 [WORKER] INFO Shutting down worker...
+2026-04-09 06:50:02,278 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 140, in <module>
+    run()
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 135, in run
+    client.connect(BROKER, PORT, keepalive=60)
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-09 06:50:07,521 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-09 06:50:07,522 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-13 15:42:18,210 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:18,223 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:23,215 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:23,225 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:28,254 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:28,264 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:33,244 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:33,254 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:38,246 [WORKER] INFO 📩 Received from kh/devices/device001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 15:42:38,257 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:12,862 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:12,881 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:17,862 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:17,874 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:23,722 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:23,731 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:28,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:28,751 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:33,752 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:33,763 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:38,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:38,751 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:43,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:43,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:48,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:48,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:53,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:53,754 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:58,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:33:58,751 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:03,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:03,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:08,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:08,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:13,752 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:13,762 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:18,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:18,753 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:23,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:23,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:28,762 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:28,774 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:33,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:33,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:38,737 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:38,746 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:43,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:43,754 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:48,772 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:48,782 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:53,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:53,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:58,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:34:58,754 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:03,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:03,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:08,762 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:08,774 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:13,792 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:13,803 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:18,762 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:18,771 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:23,752 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:23,762 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:28,742 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:28,752 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:33,752 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:33,764 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:38,842 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:38,853 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:43,762 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:43,772 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:48,762 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:48,779 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:53,782 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:53,793 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:58,762 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:35:58,772 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:03,782 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:03,792 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:08,767 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:08,778 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:17,557 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:17,566 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:22,602 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:22,613 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:27,542 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:27,552 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:32,602 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:32,613 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:37,562 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:37,572 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:42,603 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:42,614 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:47,582 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:47,593 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:52,562 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:52,572 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:57,582 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:36:57,592 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:37:02,602 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:37:02,611 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:37:07,582 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:37:07,593 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:40:58,574 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:40:58,584 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:03,599 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:03,609 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:08,574 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:08,583 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:13,584 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:13,596 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:18,574 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:18,585 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:23,583 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:23,595 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:28,593 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:28,603 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:35,013 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:35,023 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:39,993 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:40,002 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:44,993 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:45,005 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:50,018 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:50,028 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:54,994 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:55,006 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:59,983 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:41:59,992 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:05,013 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:05,023 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:10,033 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:10,042 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:15,013 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:15,023 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:19,998 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:20,008 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:24,992 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:25,002 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:30,042 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:30,052 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:35,068 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:35,078 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:40,012 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:40,023 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:45,012 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:45,023 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:50,012 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:50,022 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:55,012 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:42:55,022 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:00,012 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:00,022 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:06,872 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:06,883 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:10,012 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:10,020 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:17,372 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:17,382 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:20,022 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:20,031 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:25,012 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:25,024 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:30,031 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:30,040 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:35,032 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:35,041 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:40,042 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:40,051 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:45,011 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:45,022 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:50,016 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:50,025 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:55,031 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:43:55,042 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:00,021 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:00,030 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:05,036 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:05,047 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:10,036 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:10,046 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:15,011 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:15,023 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:20,036 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:20,046 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:25,031 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:25,042 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:30,016 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:30,026 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:35,051 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:35,063 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:40,031 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:40,042 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:45,020 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:45,030 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:50,050 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:50,060 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:55,051 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:44:55,061 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:00,050 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:00,060 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:05,031 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:05,050 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:10,010 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:10,020 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:15,150 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:15,160 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:20,050 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:20,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:25,050 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:25,060 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:30,070 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:30,080 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:35,050 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:35,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:40,030 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:40,039 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:45,055 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:45,068 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:50,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:50,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:55,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:45:55,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:00,050 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:00,061 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:05,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:05,060 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:10,029 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:10,039 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:15,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:15,060 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:20,069 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:20,079 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:25,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:25,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:30,039 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:30,049 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:35,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:35,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:40,069 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:40,079 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:45,079 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:45,089 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:50,074 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:50,083 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:55,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:46:55,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:00,049 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:00,059 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:05,059 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:05,069 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:10,084 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:10,093 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:15,054 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:15,064 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:20,069 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:20,079 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:25,070 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:25,083 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:30,048 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:30,060 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:35,074 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:35,085 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:40,071 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:40,082 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:45,078 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:45,088 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:50,038 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:50,049 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:55,069 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:47:55,079 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:00,093 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:00,106 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:05,068 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:05,077 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:10,073 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:10,083 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:15,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:15,118 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:20,088 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:20,097 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:25,068 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:25,078 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:30,088 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:30,100 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:35,068 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:35,078 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:40,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:40,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:45,068 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:45,077 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:50,109 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:50,119 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:55,068 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:48:55,078 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:00,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:00,121 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:05,073 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:05,083 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:10,103 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:10,114 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:15,133 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:15,142 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:20,118 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:20,128 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:25,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:25,119 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:30,088 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:30,098 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:35,103 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:35,114 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:40,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:40,097 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:45,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:45,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:50,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:50,097 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:55,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:49:55,118 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:00,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:00,097 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:05,067 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:05,077 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:10,092 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:10,103 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:15,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:15,096 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:20,287 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:20,298 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:25,113 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:25,131 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:30,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:30,101 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:35,102 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:35,112 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:40,092 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:40,103 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:45,067 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:45,077 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:50,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:50,100 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:55,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:50:55,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:00,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:00,103 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:05,127 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:05,136 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:10,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:10,097 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:15,177 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:15,186 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:20,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:20,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:25,132 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:25,141 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:30,097 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:30,107 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:35,167 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:35,182 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:40,086 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:40,096 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:45,132 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:45,142 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:50,086 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:50,096 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:55,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:51:55,148 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:00,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:00,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:05,096 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:05,107 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:10,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:10,099 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:15,126 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:15,136 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:20,131 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:20,140 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:25,111 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:25,122 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:30,147 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:30,157 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:35,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:35,118 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:40,141 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:40,152 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:45,127 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:45,138 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:50,126 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:50,137 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:55,116 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:52:55,126 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:00,126 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:00,138 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:05,136 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:05,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:10,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:10,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:15,126 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:15,142 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:20,127 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:20,137 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:25,141 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:25,153 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:30,116 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:30,126 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:35,132 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:35,142 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:40,136 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:40,146 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:45,142 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:45,155 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:50,166 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:50,178 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:55,146 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:53:55,158 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:00,136 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:00,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:05,136 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:05,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:10,131 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:10,140 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:15,126 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:15,136 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:20,146 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:20,156 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:25,145 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:25,159 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:30,125 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:30,135 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:35,126 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-13 16:54:35,137 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 06:33:48,482 [WORKER] INFO Shutting down worker...
+2026-04-15 06:33:48,659 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-15 06:33:48,661 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-15 15:50:39,128 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:39,139 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:44,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:44,118 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:49,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:49,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:54,087 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:54,097 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:59,147 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:50:59,158 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:04,127 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:04,138 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:09,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:09,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:14,153 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:14,163 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:19,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:19,150 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:24,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:24,124 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:54,748 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:51:54,758 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:52:20,227 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:52:20,239 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:52:35,287 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:52:35,297 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:52:50,341 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:52:50,352 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:05,417 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:05,428 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:20,247 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:20,260 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:35,278 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:35,296 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:50,417 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:53:50,428 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:05,243 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:05,252 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:20,408 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:20,418 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:35,288 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:35,304 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:50,318 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:54:50,328 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:55:05,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:55:05,307 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:55:20,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:55:20,307 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:59:19,477 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 15:59:19,487 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 15:59:24,878 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:59:24,888 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:59:34,439 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 15:59:34,447 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 15:59:39,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:59:39,890 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:59:49,457 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 15:59:49,465 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 15:59:54,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 15:59:54,887 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:04,512 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:00:04,520 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:00:09,847 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:09,857 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:19,437 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:00:19,446 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:00:24,878 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:24,888 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:34,457 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:00:34,468 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:00:39,878 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:39,888 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:49,457 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:00:49,466 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:00:54,827 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:00:54,836 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:04,428 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:01:04,437 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:01:09,847 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:09,856 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:19,457 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:01:19,466 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:01:24,848 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:24,858 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:39,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:39,889 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:54,857 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:01:54,868 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:09,197 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:02:09,206 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:02:09,847 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:09,859 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:24,219 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:02:24,230 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:02:24,847 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:24,857 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:39,217 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:02:39,228 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:02:39,847 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:39,857 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:54,177 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:02:54,186 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:02:54,858 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:02:54,868 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:09,217 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:03:09,226 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:03:09,867 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:09,877 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:24,217 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:03:24,225 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:03:24,867 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:24,877 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:39,907 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:39,921 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:54,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:03:54,889 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:04:09,867 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:04:09,877 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:04:21,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:04:21,307 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:04:35,603 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:04:35,614 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:04:36,257 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:04:36,265 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:04:51,267 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:04:51,276 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:04:58,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:04:58,887 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:06,302 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:05:06,311 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:05:13,838 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:13,848 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:21,303 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:05:21,312 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:05:28,873 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:28,885 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:36,287 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:05:36,296 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:05:43,857 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:43,867 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:51,277 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:05:51,286 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:05:58,883 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:05:58,893 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:06,302 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:06:06,313 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:06:13,872 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:13,882 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:21,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:06:21,306 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:06:28,858 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:28,868 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:36,277 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:06:36,287 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:06:43,858 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:43,875 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:51,282 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:06:51,291 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:06:58,838 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:06:58,850 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:06,267 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:07:06,279 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:07:13,842 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:13,854 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:21,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:07:21,306 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:07:28,798 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:28,808 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:36,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:07:36,308 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:07:43,837 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:43,848 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:51,277 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:07:51,285 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:07:58,842 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:07:58,852 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:06,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:08:06,306 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:08:13,843 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:13,853 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:21,297 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:08:21,306 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:08:28,837 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:28,849 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:36,268 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:08:36,277 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:08:43,828 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:43,838 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:51,298 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:08:51,307 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:08:58,848 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:08:58,858 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:06,317 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:09:06,329 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:09:13,827 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:13,841 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:21,343 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:09:21,352 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:09:28,838 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:28,848 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:36,317 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-00000000002
+2026-04-15 16:09:36,331 [WORKER] ERROR ❌ DB write error: invalid input syntax for type uuid: "00000000-0000-0000-0000-00000000002"
+CONTEXT:  unnamed portal parameter $1 = '...'
+2026-04-15 16:09:43,827 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:43,837 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:58,888 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:09:58,899 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:11,027 [WORKER] INFO Shutting down worker...
+2026-04-15 16:10:11,198 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-15 16:10:11,199 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-15 16:10:13,862 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:13,875 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:28,888 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:28,898 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:31,078 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:10:31,091 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:10:43,842 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:43,852 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:46,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:10:46,087 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:10:58,838 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:10:58,850 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:01,042 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:01,052 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:13,842 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:13,854 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:16,078 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:16,088 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:28,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:28,888 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:31,082 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:31,092 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:43,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:43,887 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:46,083 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:46,093 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:11:58,857 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:11:58,867 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:01,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:01,087 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:13,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:13,887 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:16,078 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:16,088 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:28,887 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:28,897 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:31,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:31,090 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:43,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:43,887 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:46,098 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:46,111 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:12:58,888 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:12:58,899 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:01,047 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:01,061 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:13,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:13,888 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:16,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:16,089 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:28,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:28,888 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:31,078 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:31,095 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:43,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:43,910 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:46,098 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:46,107 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:13:58,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:13:58,907 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:01,098 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:01,108 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:13,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:13,909 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:16,097 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:16,107 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:28,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:28,908 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:31,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:31,121 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:43,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:43,907 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:46,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:46,087 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:14:58,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:14:58,907 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:01,098 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:01,110 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:13,902 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:13,912 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:16,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:16,087 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:28,890 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:28,902 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:31,099 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:31,110 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:43,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:43,907 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:46,098 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:46,111 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:15:58,902 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:15:58,913 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:01,098 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:01,108 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:13,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:13,908 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:16,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:16,087 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:28,898 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:28,908 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:31,067 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:31,078 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:43,867 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:43,878 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:46,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:46,087 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:16:58,937 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:16:58,947 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:01,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:01,087 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:13,884 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:13,894 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:16,077 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:16,088 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:28,877 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:28,887 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:31,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:31,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:43,907 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:43,917 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:46,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:46,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:17:58,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:17:58,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:01,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:01,128 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:13,908 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:13,918 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:16,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:16,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:28,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:28,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:31,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:31,128 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:43,927 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:43,937 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:46,099 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:46,110 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:18:58,918 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:18:58,933 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:01,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:01,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:13,918 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:13,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:16,092 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:16,103 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:28,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:28,929 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:31,088 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:31,098 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:43,923 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:43,936 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:46,118 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:46,128 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:19:58,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:19:58,928 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:01,122 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:01,135 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:13,902 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:13,917 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:16,118 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:16,128 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:28,897 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:28,908 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:31,122 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:31,132 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:43,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:43,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:46,122 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:46,132 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:20:58,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:20:58,930 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:01,122 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:01,134 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:13,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:13,928 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:16,098 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:16,108 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:28,922 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:28,933 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:31,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:31,128 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:43,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:43,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:46,142 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:46,152 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:21:58,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:21:58,928 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:01,142 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:01,153 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:13,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:13,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:16,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:16,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:28,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:28,928 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:31,158 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:31,167 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:43,907 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:43,917 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:46,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:46,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:22:58,908 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:22:58,919 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:01,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:01,148 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:13,887 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:13,897 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:16,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:16,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:28,887 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:28,897 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:31,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:31,129 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:43,888 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:43,897 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:46,147 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:46,158 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:23:58,987 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:23:58,997 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:01,203 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:01,213 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:13,937 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:13,949 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:16,138 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:16,150 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:28,937 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:28,947 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:31,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:31,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:43,937 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:43,947 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:46,137 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:46,147 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:24:58,938 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:24:58,949 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:01,138 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:01,152 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:13,947 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:13,959 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:16,127 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:16,137 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:28,953 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:28,962 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:31,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:31,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:43,918 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:43,928 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:46,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:46,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:25:58,942 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:25:58,952 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:01,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:01,116 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:13,972 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:13,982 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:16,117 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:16,127 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:28,942 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:28,952 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:31,107 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:31,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:43,917 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:43,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:46,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:46,118 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:26:58,938 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:26:58,949 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:01,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:01,117 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:13,918 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:13,932 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:16,108 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:16,118 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:28,907 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:28,917 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:31,162 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:31,172 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:43,907 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:43,917 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:46,163 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:46,175 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:27:58,918 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:27:58,927 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:01,173 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:01,185 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:13,908 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:13,919 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:16,158 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:16,168 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:28,918 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:28,928 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:31,158 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:31,169 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:43,908 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:43,917 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:46,194 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:46,204 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:28:58,908 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:28:58,917 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:01,178 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:01,187 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:13,958 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:13,968 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:16,184 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:16,195 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:28,968 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:28,977 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:31,179 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:31,189 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:43,958 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:43,968 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:46,158 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:46,167 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:29:58,958 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:29:58,969 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:01,163 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:01,173 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:13,968 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:13,977 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:16,158 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:16,168 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:28,968 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:28,978 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:31,148 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:31,158 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:43,973 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:43,983 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:46,148 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:46,159 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:30:58,993 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:30:59,004 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:31:01,159 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:31:01,170 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:31:14,045 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:31:14,055 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:31:16,139 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:31:16,148 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000002
+2026-04-15 16:31:28,978 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:31:28,988 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:31:48,569 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:31:48,579 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:03,558 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:03,568 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:18,603 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:18,613 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:33,609 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:33,622 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:48,628 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:32:48,638 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:03,578 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:03,589 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:18,609 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:18,619 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:33,603 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:33,614 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:48,609 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:33:48,620 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:03,618 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:03,628 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:18,618 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:18,629 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:33,618 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:33,628 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:48,608 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:34:48,618 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:35:03,598 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:35:03,608 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:35:18,618 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-04-15 16:35:18,628 [WORKER] INFO ✅ Written to starter_data — uid=00000000-0000-0000-0000-000000000001
+2026-04-16 13:36:13,567 [WORKER] INFO Shutting down worker...
+2026-04-16 13:36:15,362 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 140, in <module>
+    run()
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 135, in run
+    client.connect(BROKER, PORT, keepalive=60)
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-16 13:36:20,765 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-16 13:36:20,767 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-23 06:48:41,919 [WORKER] INFO Shutting down worker...
+2026-04-23 06:48:42,110 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-23 06:48:42,111 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-25 16:09:41,230 [WORKER] INFO Shutting down worker...
+2026-04-25 16:09:44,073 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 140, in <module>
+    run()
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 135, in run
+    client.connect(BROKER, PORT, keepalive=60)
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-25 16:09:49,267 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-25 16:09:49,269 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-25 16:19:43,013 [WORKER] INFO Shutting down worker...
+2026-04-25 16:19:44,883 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 140, in <module>
+    run()
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 135, in run
+    client.connect(BROKER, PORT, keepalive=60)
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-25 16:19:50,269 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-25 16:19:50,270 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-27 12:27:15,453 [WORKER] INFO Shutting down worker...
+2026-04-27 12:27:18,319 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 140, in <module>
+    run()
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 135, in run
+    client.connect(BROKER, PORT, keepalive=60)
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-27 12:27:23,518 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-27 12:27:23,519 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-27 12:34:04,840 [WORKER] INFO Shutting down worker...
+2026-04-27 12:34:06,736 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 140, in <module>
+    run()
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 135, in run
+    client.connect(BROKER, PORT, keepalive=60)
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-27 12:34:12,031 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-27 12:34:12,032 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-28 13:14:16,443 [WORKER] INFO Shutting down worker...
+2026-04-28 13:14:16,910 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-28 13:14:16,920 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-04-30 19:48:20,343 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+Traceback (most recent call last):
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 140, in <module>
+    run()
+  File "/var/www/krishihrudya/workers/telemetry_worker.py", line 135, in run
+    client.connect(BROKER, PORT, keepalive=60)
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1435, in connect
+    return self.reconnect()
+           ^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/krishihrudya/backend/venv/lib/python3.12/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+2026-04-30 19:48:25,826 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-04-30 19:48:25,828 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
