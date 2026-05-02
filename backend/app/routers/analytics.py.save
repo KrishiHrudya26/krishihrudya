@@ -1,0 +1,223 @@
+from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import text
+from typing import Optional
+from app.database import get_db, get_sensor_db
+from app.services.auth_service import get_current_user
+from app.models.role import RolePermission
+from sqlalchemy import select
+
+router = APIRouter(prefix="/analytics", tags=["Analytics"])
+bearer  = HTTPBearer()
+
+
+async def get_user(token: str, db: AsyncSession):
+    user = await get_current_user(token, db)
+    result = await db.execute(select(RolePermission).where(RolePermission.role_id == user.role_id))
+    perms = result.scalar_one_or_none()
+    if not perms or perms.analytics_access != 1:
+        raise HTTPException(status_code=403, detail="Permission denied")
+    return user
+
+
+@router.get("/devices")
+async def get_devices(
+    credentials: HTTPAuthorizationCredentials = Depends(bearer),
+    db: AsyncSession = Depends(get_db),
+    sensor_db: AsyncSession = Depends(get_sensor_db),
+):
+    """Get list of devices available to this user for analytics."""
+    user = await get_user(credentials.credentials, db)
+    is_admin = getattr(user, 'bypass_org_scope', False)
+
+    if is_admin:
+        result = await db.execute(text("""
+            SELECT DISTINCT CAST(i.product_uid AS TEXT) as uid,
+                   i.pump_name, f.farm_name, c.cust_name
+            FROM installations i
+            JOIN farms f ON f.farm_id = i.farm_id
+            LEFT JOIN customers c ON c.cust_id = f.customer_id
+            WHERE i.product_uid IS NOT NULL
+            ORDER BY uid
+            LIMIT 100
+        """))
+    else:
+        result = await db.execute(text("""
+            SELECT DISTINCT CAST(i.product_uid AS TEXT) as uid,
+                   i.pump_name, f.farm_name, c.cust_name
+            FROM installations i
+            JOIN farms f ON f.farm_id = i.farm_id
+            LEFT JOIN customers c ON c.cust_id = f.customer_id
+            WHERE CAST(f.user_id AS TEXT) = :uid
+            AND i.product_uid IS NOT NULL
+            ORDER BY uid
+        """), {"uid": str(user.user_id)})
+
+    rows = result.mappings().all()
+
+    # Also get simulated devices from sensor DB
+    sim_result = await sensor_db.execute(text("""
+        SELECT DISTINCT CAST(uid AS TEXT) as uid, pump_name
+        FROM starter_data
+        ORDER BY uid
+        LIMIT 50
+    """))
+    sim_rows = sim_result.mappings().all()
+
+    # Merge — real devices first, then simulated
+    devices = []
+    seen = set()
+    for r in rows:
+        uid = r["uid"]
+        if uid and uid not in seen:
+            seen.add(uid)
+            devices.append({
+                "uid":       uid,
+                "pump_name": r["pump_name"] or f"Pump {uid[-4:]}",
+                "farm_name": r["farm_name"],
+                "customer":  r["cust_name"],
+            })
+    for r in sim_rows:
+        uid = r["uid"]
+        if uid and uid not in seen:
+            seen.add(uid)
+            devices.append({
+                "uid":       uid,
+                "pump_name": r["pump_name"] or f"Sim Pump {uid[-4:]}",
+                "farm_name": "Simulated",
+                "customer":  "Simulator",
+            })
+
+    return {"devices": devices}
+
+
+@router.get("/power")
+async def get_power_analytics(
+    uid:        str,
+    range_days: int = Query(default=1, description="1=today, 7=week, 30=month"),
+    credentials: HTTPAuthorizationCredentials = Depends(bearer),
+    db: AsyncSession = Depends(get_db),
+    sensor_db: AsyncSession = Depends(get_sensor_db),
+):
+    """
+    Returns voltage, current and apparent power data for charts.
+    Apparent Power S = (V1*I1 + V2*I2 + V3*I3) / 1000 kVA
+    """
+    await get_user(credentials.credentials, db)
+
+    # Limit points for performance
+    # Today → every reading, 7D → hourly avg, 30D → daily avg
+    if range_days == 1:
+        group_expr = "date_trunc('day', captured_date)"
+        interval   = "1 day"
+        limit      = 1
+    elif range_days == 7:
+        group_expr = "date_trunc('day', captured_date)"
+        interval   = "7 days"
+        limit      = 7
+    else:
+        group_expr = "date_trunc('day', captured_date)"
+        interval   = "30 days"
+        limit      = 30
+
+    result = await sensor_db.execute(text(f"""
+        SELECT
+            {group_expr}                        AS ts,
+            AVG(voltage1)                       AS v1,
+            AVG(voltage2)                       AS v2,
+            AVG(voltage3)                       AS v3,
+            AVG(current1)                       AS i1,
+            AVG(current2)                       AS i2,
+            AVG(current3)                       AS i3,
+            SUM(
+                (voltage1 * current1 +
+                 voltage2 * current2 +
+                 voltage3 * current3) / 1000.0
+            )                                   AS apparent_power,
+            AVG(signal_strength)                AS signal,
+            COUNT(*)                            AS reading_count
+        FROM starter_data
+        WHERE CAST(uid AS TEXT) = :uid
+        AND captured_date >= NOW() - INTERVAL '{interval}'
+        AND voltage1 IS NOT NULL
+        GROUP BY {group_expr}
+        ORDER BY ts ASC
+        LIMIT :limit
+    """), {"uid": uid, "limit": limit})
+
+    rows = result.mappings().all()
+
+    if not rows:
+        return {
+            "uid":    uid,
+            "range":  range_days,
+            "points": 0,
+            "voltage": [],
+            "current": [],
+            "apparent_power": [],
+        }
+
+    # Format for recharts
+    voltage_data        = []
+    current_data        = []
+    apparent_power_data = []
+
+    for r in rows:
+        ts = r["ts"].strftime("%d/%m %H:%M") if r["ts"] else ""
+
+        voltage_data.append({
+            "time": ts,
+            "V1":   round(float(r["v1"] or 0), 1),
+            "V2":   round(float(r["v2"] or 0), 1),
+            "V3":   round(float(r["v3"] or 0), 1),
+        })
+
+        current_data.append({
+            "time": ts,
+            "I1":   round(float(r["i1"] or 0), 2),
+            "I2":   round(float(r["i2"] or 0), 2),
+            "I3":   round(float(r["i3"] or 0), 2),
+        })
+
+        apparent_power_data.append({
+            "time": ts,
+            "kVA":  round(float(r["apparent_power"] or 0), 3),
+        })
+
+    # Summary stats
+    all_v = [r for r in rows if r["v1"]]
+    all_i = [r for r in rows if r["i1"]]
+
+    avg_voltage = round(sum(
+        (float(r["v1"]) + float(r["v2"]) + float(r["v3"])) / 3
+        for r in all_v
+    ) / len(all_v), 1) if all_v else 0
+
+    avg_current = round(sum(
+        (float(r["i1"]) + float(r["i2"]) + float(r["i3"])) / 3
+        for r in all_i
+    ) / len(all_i), 1) if all_i else 0
+
+    max_power = round(max(
+        float(r["apparent_power"] or 0) for r in rows
+    ), 3) if rows else 0
+
+    avg_power = round(sum(
+        float(r["apparent_power"] or 0) for r in rows
+    ) / len(rows), 3) if rows else 0
+
+    return {
+        "uid":           uid,
+        "range_days":    range_days,
+        "points":        len(rows),
+        "summary": {
+            "avg_voltage_v":    avg_voltage,
+            "avg_current_a":    avg_current,
+            "avg_power_kva":    avg_power,
+            "max_power_kva":    max_power,
+        },
+        "voltage":        voltage_data,
+        "current":        current_data,
+        "apparent_power": apparent_power_data,
+    }
