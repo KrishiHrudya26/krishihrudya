@@ -473,9 +473,9 @@ function ProductsView({ can }) {
   const totalPages = Math.ceil(total / limit)
 
   return (
-    <div className="flex gap-4">
-      {/* Left — main table */}
-      <div className="flex-1 min-w-0">
+    <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+      {/* Main table */}
+      <div style={{ flex: 1, minWidth: '280px' }}>
         {/* Filters */}
         <div className="flex gap-3 mb-4">
           <input placeholder="Search UID, name or serial..."
@@ -572,7 +572,7 @@ function ProductsView({ can }) {
       </div>
 
       {/* Right — action panel */}
-      <div className="w-72 flex-shrink-0 flex flex-col gap-4">
+      <div style={{ width: '100%', maxWidth: '288px', flexShrink: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
 
         {/* Create product */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
@@ -698,11 +698,12 @@ export default function Products() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <h1 style={{ fontFamily: "'DM Serif Display', serif", color: '#106f30' }} className="text-2xl">
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        marginBottom: '24px', flexWrap: 'wrap', gap: '12px' }}>
+        <h1 style={{ fontFamily: "'DM Serif Display', serif", color: '#106f30', fontSize: '24px', margin: 0 }}>
           Products
         </h1>
-        <div className="flex gap-2">
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
           {VIEWS.map(v => (
             <button key={v.id} onClick={() => setView(v.id)}
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all border-2

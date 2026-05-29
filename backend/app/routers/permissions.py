@@ -21,7 +21,7 @@ ALL_PERMISSIONS = [
     "categories_manage","products_test_status","meta_tables_manage",
     "dealer_manage","commission_approve","audit_logs_view","notifications_manage",
     "sim_manage","services_manage","services_view","orders_manage",
-    "content_manage","installations_manage",
+    "content_manage","installations_manage","installations_view",
 ]
 
 PERMISSION_LABELS = {
@@ -65,6 +65,7 @@ PERMISSION_LABELS = {
     "orders_manage":          "Manage Orders",
     "content_manage":         "Manage Content",
     "installations_manage":   "Manage Installations",
+    "installations_view":     "View Installations",
 }
 
 PERMISSION_GROUPS = {
@@ -75,7 +76,7 @@ PERMISSION_GROUPS = {
     "Customers":    ["customers_add","customers_edit","customers_delete","access_tokens_assign"],
     "Hierarchy":    ["hierarchy_view","hierarchy_manage"],
     "Devices":      ["devices_assign","devices_edit","devices_delete","motor_control","settings_basic","settings_advanced"],
-    "Farms":        ["farms_manage","installations_manage"],
+    "Farms":        ["farms_manage","installations_manage","installations_view"],
     "Analytics":    ["analytics_access","event_logs_view"],
     "Products":     ["products_add","categories_manage","products_test_status","meta_tables_manage","orders_manage"],
     "Dealers":      ["dealer_manage","commission_approve"],

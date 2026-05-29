@@ -204,18 +204,6 @@ export default function DashboardHome({ user, permissions }) {
       {tab === 'customer' && <CustomerDashboard user={user} />}
       {tab === 'products' && <ProductsDashboard />}
 
-      {/* Permissions widget */}
-      <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mt-6">
-        <h2 className="font-semibold text-gray-800 mb-4 text-sm">Your Permissions</h2>
-        <div className="flex flex-wrap gap-2">
-          {Object.entries(permissions).filter(([, v]) => v === 1).map(([k]) => (
-            <span key={k} className="px-3 py-1 rounded-full text-xs font-medium text-white"
-              style={{ background: '#106f30' }}>
-              {k.replace(/_/g, ' ')}
-            </span>
-          ))}
-        </div>
-      </div>
     </div>
   )
 }

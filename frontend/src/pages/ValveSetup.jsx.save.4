@@ -1,0 +1,789 @@
+import { useRef, useState, useEffect } from 'react'
+import toast from 'react-hot-toast'
+import api from '../services/api'
+import jsQR from 'jsqr'
+
+const isNative = window.location.hostname === 'localhost'
+const MQTT_HOST = isNative ? 'krishihrudya.duckdns.org' : window.location.hostname
+const MQTT_PORT = 443
+const MQTT_CLIENT_ID = 'valve-web-' + Math.random().toString(36).slice(2, 8)
+
+export default function ValveSetup() {
+  const [screen, setScreen]               = useState('scan')
+  const [uid, setUid]                     = useState('')
+  const [ssid, setSsid]                   = useState('')
+  const [pass, setPass]                   = useState('')
+  const [showPass, setShowPass]           = useState(false)
+  const [steps, setSteps]                 = useState(initSteps())
+  const [successData, setSuccessData]     = useState(null)
+  const [polling, setPolling]             = useState(false)
+  const [wifiWarning, setWifiWarning]     = useState(false)
+  const [deviceQRSsid, setDeviceQRSsid]   = useState('')
+  const [deviceQRPass, setDeviceQRPass]   = useState('')
+  const [scanning, setScanning]           = useState(false)
+  const [camError, setCamError]           = useState(false)
+  const [address, setAddress]             = useState('')
+  const [channel, setChannel]             = useState('')
+  const [cfgStatus, setCfgStatus]         = useState('idle')
+  const [cfgMessage, setCfgMessage]       = useState('')
+  const [mqttConnected, setMqttConnected] = useState(false)
+  const [valveName, setValveName]         = useState('Master')
+  const [editingName, setEditingName]     = useState(false)
+  const [tempName, setTempName]           = useState('Master')
+  const [valveStatus, setValveStatus]     = useState('idle')
+  const [batteryVoltage, setBatteryVoltage] = useState(null)
+  const [cmdokVisible, setCmdokVisible]   = useState(false)
+  const [lastResponse, setLastResponse]   = useState('')
+
+  const videoRef      = useRef(null)
+  const canvasRef     = useRef(null)
+  const streamRef     = useRef(null)
+  const scanTimerRef  = useRef(null)
+  const pollRef       = useRef(null)
+  const mqttRef       = useRef(null)
+  const cfgTimerRef   = useRef(null)
+  const cmdokTimerRef = useRef(null)
+
+  // ── Native MQTT bridge (Android) ──────────────────────
+  const MQTT_BRIDGE = 'http://127.0.0.1:9093'
+
+  async function connectMQTT(deviceUid) {
+    if (!isNative) {
+      // Browser — use Paho WebSocket
+      connectMQTTWeb(deviceUid)
+      return
+    }
+    // Native Android — use Java MQTT bridge
+    try {
+      const clientId = 'valve-' + Math.random().toString(36).slice(2, 8)
+      const res = await fetch(`${MQTT_BRIDGE}/mqtt-connect?clientId=${clientId}`)
+      const data = await res.json()
+      if (data.ok) {
+        setMqttConnected(true)
+        toast.success('MQTT connected')
+        // Subscribe to status topic
+        await fetch(`${MQTT_BRIDGE}/mqtt-subscribe?topic=${deviceUid}STATUS`)
+        // Start polling for messages
+        startMessagePolling(deviceUid)
+      } else {
+        toast.error('MQTT failed: ' + data.error)
+      }
+    } catch (e) {
+      console.error('MQTT bridge error:', e)
+      // Fallback to WebSocket
+      connectMQTTWeb(deviceUid)
+    }
+  }
+
+  function startMessagePolling(deviceUid) {
+    if (pollRef.current) clearInterval(pollRef.current)
+    pollRef.current = setInterval(async () => {
+      try {
+        const res = await fetch(`${MQTT_BRIDGE}/mqtt-messages`)
+        const data = await res.json()
+        if (data.message) handleMQTTMessage(data.message, deviceUid)
+        const statusRes = await fetch(`${MQTT_BRIDGE}/mqtt-status`)
+        const status = await statusRes.json()
+        setMqttConnected(status.connected)
+      } catch {}
+    }, 500)
+  }
+ 
+  function handleMQTTMessage(payload, deviceUid) {
+    console.log('[MQTT] received:', payload)
+    setLastResponse(payload)
+
+    // Device config screen — show response and enable next button
+    setCfgStatus('success')
+    setCfgMessage(payload)
+    if (cfgTimerRef.current) clearTimeout(cfgTimerRef.current)
+
+    // Show CMDOK popup for any message
+    setCmdokVisible(true)
+    if (cmdokTimerRef.current) clearTimeout(cmdokTimerRef.current)
+    cmdokTimerRef.current = setTimeout(() => setCmdokVisible(false), 4000)
+
+    // Valve response parsing — <<address,channel,cmd,battery>>
+    const valveResp = payload.match(/<<(.+)>>/)
+    if (valveResp) {
+      const parts = valveResp[1].split(',')
+      if (parts.length >= 3) {
+        const cmd = parts[2]?.trim()
+        const battery = parts[3]?.trim()
+        if (battery) setBatteryVoltage(battery)
+        setValveStatus(cmd === '01' ? 'open' : 'closed')
+      }
+    }
+  }
+
+  async function publishCommand(deviceUid, packet) {
+    if (!mqttConnected) { toast.error('MQTT not connected'); return false }
+    if (isNative) {
+      try {
+        const res = await fetch(`${MQTT_BRIDGE}/mqtt-publish?topic=${deviceUid}COMMAND&message=${encodeURIComponent(packet)}`)
+        const data = await res.json()
+        return data.ok
+      } catch { return false }
+    } else {
+      // Browser WebSocket publish
+      if (!mqttRef.current) return false
+      const msg = new window.Paho.MQTT.Message(packet)
+      msg.destinationName = `${deviceUid}COMMAND`
+      mqttRef.current.send(msg)
+      return true
+    }
+  }
+
+  function connectMQTTWeb(deviceUid) {
+    if (mqttRef.current) return
+    const existing = document.getElementById('paho-script')
+    if (existing && window.Paho) { initMQTTClientWeb(deviceUid); return }
+    const script = document.createElement('script')
+    script.id  = 'paho-script'
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js'
+    script.onload = () => initMQTTClientWeb(deviceUid)
+    document.head.appendChild(script)
+  }
+
+  function initMQTTClientWeb(deviceUid) {
+    const MQTT_CLIENT_ID = 'valve-web-' + Math.random().toString(36).slice(2, 8)
+    const client = new window.Paho.MQTT.Client('krishihrudya.duckdns.org', 443, '/mqtt', MQTT_CLIENT_ID)
+    mqttRef.current = client
+    client.onConnectionLost = () => { setMqttConnected(false); toast.error('MQTT disconnected') }
+    client.onMessageArrived = (msg) => handleMQTTMessage(msg.payloadString.trim(), deviceUid)
+    client.connect({
+      onSuccess: () => { setMqttConnected(true); client.subscribe(`${deviceUid}STATUS`); toast.success('MQTT connected') },
+      onFailure: (e) => { setMqttConnected(false); toast.error('MQTT connection failed') },
+      keepAliveInterval: 30, useSSL: true, mqttVersion: 3,
+      uris: ['wss://krishihrudya.duckdns.org/mqtt'],
+    })
+  }
+
+  function disconnectMQTT() {
+    if (pollRef.current) { clearInterval(pollRef.current); pollRef.current = null }
+    if (mqttRef.current) { try { mqttRef.current.disconnect() } catch {} mqttRef.current = null }
+    setMqttConnected(false)
+  }
+
+  async function startScanner() {
+    setScanning(true); setCamError(false)
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: { ideal: 'environment' }, width: { ideal: 640 }, height: { ideal: 480 } }
+      })
+      streamRef.current = stream
+      if (videoRef.current) {
+        videoRef.current.srcObject = stream
+        videoRef.current.onloadedmetadata = () => {
+          scanTimerRef.current = setInterval(() => decodeFrame(), 100)
+        }
+      }
+    } catch { setCamError(true) }
+  }
+
+  function stopScanner() {
+    if (scanTimerRef.current) { clearInterval(scanTimerRef.current); scanTimerRef.current = null }
+    if (streamRef.current) { streamRef.current.getTracks().forEach(t => t.stop()); streamRef.current = null }
+    setScanning(false)
+  }
+
+  function decodeFrame() {
+    const video = videoRef.current, canvas = canvasRef.current
+    if (!video || !canvas || video.readyState !== 4 || video.videoWidth === 0) return
+    canvas.width = video.videoWidth; canvas.height = video.videoHeight
+    const ctx = canvas.getContext('2d', { willReadFrequently: true })
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height)
+    let imgData
+    try { imgData = ctx.getImageData(0, 0, canvas.width, canvas.height) } catch { return }
+    const code = jsQR(imgData.data, imgData.width, imgData.height, { inversionAttempts: 'attemptBoth' })
+    if (code && code.data) { stopScanner(); handleQRData(code.data) }
+  }
+
+  useEffect(() => () => { stopScanner(); disconnectMQTT() }, [])
+
+  // Restore state when app comes back from background
+  useEffect(() => {
+    const saved = localStorage.getItem('valveState')
+    if (saved) {
+      try {
+        const s = JSON.parse(saved)
+        if (s.screen && s.screen !== 'scan') {
+          if (s.uid) setUid(s.uid)
+          if (s.ssid) setSsid(s.ssid)
+          if (s.pass) setPass(s.pass)
+          if (s.deviceQRSsid) setDeviceQRSsid(s.deviceQRSsid)
+          if (s.deviceQRPass) setDeviceQRPass(s.deviceQRPass)
+          if (s.wifiWarning) setWifiWarning(s.wifiWarning)
+          // If was on connecting screen, move to success
+          // (ESP should have disconnected hotspot by now)
+          if (s.screen === 'connecting') {
+            setSuccessData({ uid: s.uid, ssid: s.ssid, ip: '—' })
+            setScreen('success')
+          } else {
+            setScreen(s.screen)
+          }
+        }
+        localStorage.removeItem('valveState')
+      } catch {}
+    }
+  }, [])
+
+  useEffect(() => {
+    const save = () => {
+      localStorage.setItem('valveState', JSON.stringify({
+        screen, uid, ssid, pass, deviceQRSsid, deviceQRPass, wifiWarning
+      }))
+    }
+    window.addEventListener('pagehide', save)
+    document.addEventListener('visibilitychange', save)
+    return () => {
+      window.removeEventListener('pagehide', save)
+      document.removeEventListener('visibilitychange', save)
+    }
+  }, [screen, uid, ssid, pass, deviceQRSsid, deviceQRPass, wifiWarning])
+
+  async function handleQRData(raw) {
+    let deviceUid = '', deviceSsid = '', devicePass = ''
+    try {
+      const parsed = JSON.parse(raw)
+      deviceUid  = parsed.uid      || parsed.UID      || ''
+      deviceSsid = parsed.ssid     || parsed.SSID     || ''
+      devicePass = parsed.password || parsed.PASSWORD || parsed.pw || parsed.PW || ''
+    } catch {
+      const ssidMatch = raw.match(/SSID:\s*([^\s\n]+)/i)
+      const pwMatch   = raw.match(/PW:\s*([^\s\n]+)/i)
+      const uidMatch  = raw.match(/UID:\s*([^\s\n]+)/i)
+      deviceSsid = ssidMatch ? ssidMatch[1].trim() : ''
+      devicePass = pwMatch   ? pwMatch[1].trim()   : ''
+      deviceUid  = uidMatch  ? uidMatch[1].trim()  : ''
+    }
+    if (!deviceUid) { toast.error('QR did not contain a device UID'); return }
+    setUid(deviceUid); setDeviceQRSsid(deviceSsid); setDeviceQRPass(devicePass)
+    setSsid(''); setPass('')
+    api.post('/valve-setup/register', { uid: deviceUid })
+      .then(() => console.log('[valve] UID registered:', deviceUid))
+      .catch(e => console.error('[valve] register failed:', e?.response?.status, e?.message))
+    toast.success('QR scanned successfully')
+    setScreen('config')
+  }
+
+  function openWifiSettings() {
+    fetch('http://127.0.0.1:9092/open-wifi').catch(() => {})
+    window.location.href = 'intent:#Intent;action=android.settings.WIFI_SETTINGS;end'
+  }
+
+  async function handleSave() {
+    setWifiWarning(false); setSteps(initSteps()); setScreen('connecting')
+    updateStep(1, 'done', `UID: ${uid}`)
+
+    // Send UDP directly from APK to ESP
+    let udpSent = false
+    try {
+      const udpData = encodeURIComponent(`StationSSID${ssid}!StationPW${pass}.`)
+      const udpRes  = await fetch(`http://127.0.0.1:9092/send-udp?ip=192.168.33.1&port=9090&data=${udpData}`)
+      const udpJson = await udpRes.json()
+      udpSent = udpJson.ok
+    } catch {
+      try {
+        const { data } = await api.post('/valve-setup/credentials', { uid, ssid, password: pass })
+        udpSent = data.udp_sent
+      } catch {}
+    }
+
+    if (!udpSent) {
+      updateStep(2, 'error', 'UDP failed — make sure phone is on ESP hotspot')
+      return
+    }
+
+    // Save UDP sent status to DB
+    api.post('/valve-setup/save-credentials', { uid, ssid, password: pass }).then(r => console.log('[DB] saved:', r.data)).catch(e => console.error('[DB] save failed:', e?.response?.status, e?.response?.data, e?.message))
+
+    updateStep(2, 'done', 'UDP sent to ESP ✓')
+    updateStep(3, 'loading', 'ESP receiving credentials — hotspot will disconnect…')
+    updateStep(4, 'idle', 'Waiting…')
+
+    // Wait 5s for ESP to disconnect hotspot, phone auto-switches to home WiFi
+    setTimeout(() => {
+      updateStep(3, 'done', `ESP will join "${ssid}"`)
+      updateStep(4, 'done', 'Proceeding to device configuration')
+      setTimeout(() => {
+        setSuccessData({ uid, ssid, ip: '—' })
+        setScreen('success')
+      }, 1000)
+    }, 5000)
+  }
+
+  function handleDeviceConfig() {
+    const addr = parseInt(address), ch = parseInt(channel)
+    if (isNaN(addr) || addr < 0 || addr > 65535) { toast.error('Address must be 0–65535'); return }
+    if (isNaN(ch) || channel.trim() === '') { toast.error('Enter a valid channel'); return }
+    const packet = `${uid}<<192,0,8,${Math.floor(addr/256)},${addr%256},98,32,${ch},203,0,0>>`
+    setCfgStatus('sending'); setCfgMessage(`Sending: ${packet}`)
+    publishCommand(uid, packet).then(ok => {
+      if (!ok) {
+        setCfgStatus('error'); setCfgMessage('Failed to publish — check MQTT connection')
+      } else {
+        toast.success('✅ Command sent to device!')
+      }
+    })
+  }
+
+  function sendValveCommand(cmd) {
+    const packet = `<${parseInt(address)},${parseInt(channel)},${cmd}>`
+    setValveStatus('sending'); setLastResponse(''); setBatteryVoltage(null)
+    publishCommand(uid, packet).then(ok => { if (!ok) setValveStatus('error') })
+  }
+
+  function initSteps() {
+    return [
+      { id: 1, title: 'UID registered in database', desc: 'Waiting…',          state: 'idle' },
+      { id: 2, title: 'Send UDP packet to ESP',      desc: '192.168.33.1:9090', state: 'idle' },
+      { id: 3, title: 'ESP connecting to WiFi',      desc: 'Waiting…',          state: 'idle' },
+      { id: 4, title: 'Device online',               desc: 'Waiting…',          state: 'idle' },
+    ]
+  }
+
+  function updateStep(id, state, desc) {
+    setSteps(prev => prev.map(s => s.id === id ? { ...s, state, desc } : s))
+  }
+
+  function resetAll() {
+    stopScanner(); disconnectMQTT()
+    setUid(''); setSsid(''); setPass(''); setDeviceQRSsid(''); setDeviceQRPass('')
+    setSteps(initSteps()); setSuccessData(null)
+    setPolling(false); setWifiWarning(false); setCamError(false)
+    setAddress(''); setChannel(''); setCfgStatus('idle'); setCfgMessage('')
+    setValveName('Master'); setEditingName(false); setTempName('Master')
+    setValveStatus('idle'); setBatteryVoltage(null); setCmdokVisible(false); setLastResponse('')
+    if (pollRef.current) clearInterval(pollRef.current)
+    if (cfgTimerRef.current) clearTimeout(cfgTimerRef.current)
+    if (cmdokTimerRef.current) clearTimeout(cmdokTimerRef.current)
+    localStorage.removeItem('valveState')
+    setScreen('scan')
+  }
+
+  function checkAndSave() {
+    if (!ssid.trim()) { toast.error('Enter SSID'); return }
+    if (!pass.trim()) { toast.error('Enter password'); return }
+    setWifiWarning(true)
+  }
+
+  function goToDeviceConfig() {
+    setCfgStatus('idle'); setCfgMessage('')
+    setScreen('device-config'); connectMQTT(uid)
+  }
+
+  function goToValveCommands() {
+    setValveStatus('idle'); setLastResponse(''); setBatteryVoltage(null)
+    setScreen('valve-commands')
+    // Always restart polling for valve commands screen
+    if (isNative) {
+      startMessagePolling(uid)
+      fetch('http://127.0.0.1:9093/mqtt-status')
+        .then(r => r.json())
+        .then(d => setMqttConnected(d.connected))
+        .catch(() => {})
+    }
+  }
+
+  function CfgStatusBar() {
+    const map = {
+      idle:    { bg: '#f3f4f6', text: 'text-gray-400',   label: 'Waiting for input',                       icon: '⏳' },
+      sending: { bg: '#fef9c3', text: 'text-yellow-700', label: 'Sending command to device…',              icon: '📡' },
+      cmdok:   { bg: '#dbeafe', text: 'text-blue-700',   label: 'Command received — configuring device…',  icon: '📥' },
+      success: { bg: '#dcfce7', text: 'text-green-700',  label: 'Device responded ✓',    icon: '✅' },
+      error:   { bg: '#fee2e2', text: 'text-red-700',    label: 'Failed to configure device',              icon: '❌' },
+    }
+    const s = map[cfgStatus] || map.idle
+    return (
+      <div className="rounded-xl px-4 py-3 flex items-start gap-3 mb-5" style={{ background: s.bg }}>
+        <span className="text-xl mt-0.5">{s.icon}</span>
+        <div>
+          <p className={`text-sm font-semibold ${s.text}`}>{s.label}</p>
+          {cfgMessage && cfgStatus !== 'idle' && (
+            <p className="text-xs text-gray-500 mt-0.5 font-mono break-all">{cfgMessage}</p>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen" style={{ background: '#f7ffd6' }}>
+
+      {cmdokVisible && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-gray-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 max-w-xs">
+          <span className="text-xl">📥</span>
+          <div>
+            <p className="font-bold text-sm">Device Response</p>
+            <p className="text-xs text-gray-300 font-mono break-all">{lastResponse}</p>
+          </div>
+        </div>
+      )}
+
+      <nav className="sticky top-0 z-40 flex items-center px-6 py-3 shadow-sm" style={{ background: '#106f30' }}>
+        {screen !== 'scan' && (
+          <button onClick={resetAll} className="text-green-200 hover:text-white text-sm flex items-center gap-1 mr-3">
+            ← Back
+          </button>
+        )}
+        <img src="/logo_horizontal.png" alt="KH" className="h-8 mr-2" onError={e => e.target.style.display = 'none'} />
+        <span className="text-white font-semibold text-sm">Valve Setup</span>
+        {(screen === 'device-config' || screen === 'valve-commands') && (
+          <span className={`ml-auto text-xs font-medium px-2 py-1 rounded-full ${mqttConnected ? 'bg-green-800 text-green-200' : 'bg-red-800 text-red-200'}`}>
+            {mqttConnected ? '🟢 MQTT' : '🔴 MQTT'}
+          </span>
+        )}
+      </nav>
+
+      <div className="max-w-lg mx-auto px-4 py-8">
+
+        {screen === 'scan' && (
+          <div>
+            <h1 style={{ fontFamily: "'DM Serif Display',serif", color: '#106f30' }} className="text-2xl mb-1">Add Valve Device</h1>
+            <p className="text-sm text-gray-500 mb-6">Scan the QR code on your valve device label.</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-4">
+              {!scanning ? (
+                <button onClick={startScanner} className="w-full border-2 border-dashed border-gray-200 rounded-xl py-10 flex flex-col items-center gap-3 text-gray-400 cursor-pointer hover:text-green-700 hover:border-green-500 hover:bg-green-50 transition-all">
+                  <span className="text-5xl">📷</span>
+                  <span className="font-semibold text-base">Tap to scan QR code</span>
+                  <span className="text-xs text-center px-4">Opens live camera — point at the QR code</span>
+                </button>
+              ) : (
+                <div className="rounded-xl overflow-hidden bg-black">
+                  {camError ? (
+                    <div className="flex flex-col items-center justify-center py-16 gap-3 text-gray-400">
+                      <span className="text-4xl">📷</span>
+                      <p className="text-sm">Camera unavailable</p>
+                      <p className="text-xs text-gray-300 text-center px-4">Use <strong>https://krishihrudya.duckdns.org/valve</strong></p>
+                      <button onClick={() => setScanning(false)} className="mt-2 px-4 py-2 rounded-xl text-sm border border-gray-600 text-gray-300">Go back</button>
+                    </div>
+                  ) : (
+                    <div className="relative">
+                      <video ref={videoRef} autoPlay playsInline muted className="w-full rounded-xl" style={{ maxHeight: 320 }} />
+                      <canvas ref={canvasRef} className="hidden" />
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div className="relative" style={{ width: 200, height: 200 }}>
+                          <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-green-400" />
+                          <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-green-400" />
+                          <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-green-400" />
+                          <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-green-400" />
+                        </div>
+                      </div>
+                      <button onClick={stopScanner} className="absolute top-3 right-3 bg-black/50 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg">×</button>
+                      <p className="text-center text-xs text-gray-300 py-2 bg-black">Point at QR code — auto detects</p>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+            <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-sm text-blue-700">
+              ℹ️ Device UID is saved to the database immediately after scanning.
+            </div>
+          </div>
+        )}
+
+        {screen === 'config' && (
+          <div>
+            <h1 style={{ fontFamily: "'DM Serif Display',serif", color: '#106f30' }} className="text-2xl mb-1">WiFi Configuration</h1>
+            <p className="text-sm text-gray-500 mb-6">Enter the home WiFi credentials for this valve device.</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+              <div className="flex items-center gap-2 text-xs font-semibold text-green-700 bg-green-50 border border-green-200 rounded-lg px-3 py-2 mb-4">
+                ✅ QR scanned — UID saved to database
+              </div>
+              <div className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 mb-4">
+                <div>
+                  <p className="text-xs text-gray-400 mb-0.5">Device UID</p>
+                  <p className="font-mono font-semibold text-gray-800 text-sm">{uid}</p>
+                </div>
+                <span className="text-xs text-green-600 font-medium">🗄️ Saved</span>
+              </div>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 mb-5">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">📋 Extracted from QR</p>
+                <div className="flex flex-col gap-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-gray-500">ESP Hotspot SSID</span>
+                    <span className="text-xs font-mono font-semibold text-gray-800">{deviceQRSsid || '—'}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-gray-500">ESP Hotspot Password</span>
+                    <span className="text-xs font-mono font-semibold text-gray-800">{deviceQRPass || '—'}</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-5">
+                <p className="text-xs font-semibold text-amber-700 mb-1">📱 Step: Connect to ESP hotspot first</p>
+                <p className="text-xs text-amber-600">Connect your phone to <strong>{deviceQRSsid || 'KH_WiFi_...'}</strong> using the password above, then enter your home WiFi below.</p>
+              </div>
+              <hr className="border-gray-100 mb-5" />
+              <div className="mb-4">
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">📶 Home WiFi SSID</label>
+                <input type="text" value={ssid} onChange={e => setSsid(e.target.value)}
+                  placeholder="Enter your home WiFi network name"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm outline-none focus:border-green-500 focus:ring-2 focus:ring-green-100" />
+              </div>
+              <div className="mb-5">
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">🔒 Home WiFi Password</label>
+                <div className="relative">
+                  <input type={showPass ? 'text' : 'password'} value={pass}
+                    onChange={e => setPass(e.target.value)}
+                    placeholder="Enter your home WiFi password"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm outline-none focus:border-green-500 focus:ring-2 focus:ring-green-100 pr-10" />
+                  <button type="button" onClick={() => setShowPass(v => !v)} className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+                    {showPass ? '🙈' : '👁️'}
+                  </button>
+                </div>
+              </div>
+              {wifiWarning && (
+                <div className="mb-4 bg-amber-50 border border-amber-200 rounded-xl p-4">
+                  <p className="text-sm font-semibold text-amber-800 mb-1">📶 Connect to ESP Hotspot First</p>
+                  <p className="text-xs text-amber-700 mb-3">Connect your phone to <strong>{deviceQRSsid}</strong> (password: {deviceQRPass}) before sending credentials.</p>
+                  <button onClick={openWifiSettings} className="block w-full text-center px-4 py-2.5 rounded-xl text-sm font-semibold text-white mb-2" style={{ background: '#f59e0b' }}>
+                    📱 Open WiFi Settings
+                  </button>
+                  <button onClick={handleSave} className="w-full text-center px-4 py-2 rounded-xl text-sm text-gray-600 border border-gray-200 bg-white">
+                    ✅ Already on ESP WiFi — Send credentials
+                  </button>
+                </div>
+              )}
+              <div className="flex justify-end">
+                <button onClick={checkAndSave} className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:opacity-90" style={{ background: '#106f30' }}>
+                  💾 Save &amp; Connect
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {screen === 'connecting' && (
+          <div>
+            <h1 style={{ fontFamily: "'DM Serif Display',serif", color: '#106f30' }} className="text-2xl mb-1">Connecting…</h1>
+            <p className="text-sm text-gray-500 mb-6">Sending credentials to ESP via UDP.</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 divide-y divide-gray-50">
+              {steps.map(step => (
+                <div key={step.id} className="flex items-start gap-4 px-5 py-4">
+                  <StepIcon state={step.state} id={step.id} />
+                  <div>
+                    <p className="text-sm font-semibold text-gray-800">{step.title}</p>
+                    <p className="text-xs text-gray-400 mt-0.5 font-mono">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 bg-blue-50 border border-blue-100 rounded-xl p-4">
+              <p className="text-xs text-blue-700 text-center">
+                ⏳ ESP is receiving credentials and will disconnect its hotspot automatically.
+                Your phone will switch back to home WiFi on its own in a few seconds.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {screen === 'success' && successData && (
+          <div>
+            <h1 style={{ fontFamily: "'DM Serif Display',serif", color: '#106f30' }} className="text-2xl mb-1">WiFi Configured 🎉</h1>
+            <p className="text-sm text-gray-500 mb-6">Credentials sent. Now configure device parameters.</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+              <div className="px-6 py-5 flex items-center gap-4" style={{ background: 'linear-gradient(135deg,#e6f7ec,#f0fdf4)' }}>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center text-2xl" style={{ background: '#106f30' }}>📶</div>
+                <div>
+                  <p className="font-bold text-gray-800">Credentials Sent ✓</p>
+                  <p className="text-sm text-gray-500">ESP will join "{successData.ssid}"</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-3 p-5">
+                {[
+                  ['Device UID', successData.uid],
+                  ['Target Network', successData.ssid],
+                  ['UDP Status', '✅ Sent'],
+                  ['DB Status', '✅ Saved'],
+                ].map(([l, v]) => (
+                  <div key={l} className="bg-gray-50 rounded-xl px-4 py-3">
+                    <p className="text-xs text-gray-400 mb-0.5">{l}</p>
+                    <p className="text-sm font-semibold text-gray-800 font-mono">{v}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="flex gap-3 px-5 pb-5 flex-wrap">
+                <button onClick={goToDeviceConfig} className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white" style={{ background: '#106f30' }}>
+                  ⚙️ Configure Device Parameters →
+                </button>
+                <button onClick={resetAll} className="px-4 py-2 rounded-xl text-sm font-semibold border border-gray-200 text-gray-600">
+                  + Add another
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {screen === 'device-config' && (
+          <div>
+            <h1 style={{ fontFamily: "'DM Serif Display',serif", color: '#106f30' }} className="text-2xl mb-1">Device Configuration</h1>
+            <p className="text-sm text-gray-500 mb-6">Set device address and communication channel.</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+              <div className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 mb-5">
+                <div>
+                  <p className="text-xs text-gray-400 mb-0.5">Device UID</p>
+                  <p className="font-mono font-semibold text-gray-800 text-sm">{uid}</p>
+                </div>
+                <span className={`text-xs font-medium px-2 py-1 rounded-full ${mqttConnected ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'}`}>
+                  {mqttConnected ? '🟢 MQTT connected' : '🔴 MQTT disconnected'}
+                </span>
+              </div>
+              <CfgStatusBar />
+              <div className="mb-4">
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+                  📍 Device Address <span className="text-gray-400 font-normal normal-case ml-1">(0 – 65535)</span>
+                </label>
+                <input type="number" min="0" max="65535" value={address} onChange={e => setAddress(e.target.value)} placeholder="e.g. 300"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm outline-none focus:border-green-500 focus:ring-2 focus:ring-green-100" />
+                {address !== '' && !isNaN(parseInt(address)) && (
+                  <p className="text-xs text-gray-400 mt-1 font-mono">
+                    addHigh = {Math.floor(parseInt(address) / 256)} &nbsp;|&nbsp; addLow = {parseInt(address) % 256}
+                  </p>
+                )}
+              </div>
+              <div className="mb-5">
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">📡 Communication Channel</label>
+                <input type="number" min="0" value={channel} onChange={e => setChannel(e.target.value)} placeholder="e.g. 1"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm outline-none focus:border-green-500 focus:ring-2 focus:ring-green-100" />
+                <p className="text-xs text-gray-400 mt-1">All slave devices must use the same channel as the master.</p>
+              </div>
+              {address !== '' && channel !== '' && !isNaN(parseInt(address)) && !isNaN(parseInt(channel)) && (
+                <div className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 mb-5">
+                  <p className="text-xs text-gray-400 mb-1">Command packet preview</p>
+                  <p className="text-xs font-mono text-gray-700 break-all">
+                    {`${uid}<<192,0,8,${Math.floor(parseInt(address)/256)},${parseInt(address)%256},98,32,${channel},203,0,0>>`}
+                  </p>
+                </div>
+              )}
+              <button onClick={handleDeviceConfig}
+                disabled={!address || !channel || cfgStatus === 'sending' || cfgStatus === 'cmdok'}
+                className="w-full py-3 rounded-xl text-sm font-semibold text-white transition-all hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
+                style={{ background: '#106f30' }}>
+                {cfgStatus === 'sending' || cfgStatus === 'cmdok' ? '⏳ Waiting for device response…' : '⚙️ Save Settings'}
+              </button>
+              {!mqttConnected && <p className="text-xs text-center text-red-500 mt-2">⚠️ MQTT disconnected — command may not reach device</p>}
+              {cfgStatus === 'success' && (
+                <button onClick={goToValveCommands} className="w-full mt-3 py-3 rounded-xl text-sm font-semibold text-white" style={{ background: '#1a6e3c' }}>
+                  🔧 Go to Valve Commands →
+                </button>
+              )}
+              {cfgStatus === 'error' && (
+                <button onClick={() => { setCfgStatus('idle'); setCfgMessage('') }} className="w-full mt-3 py-2.5 rounded-xl text-sm font-semibold border border-red-200 text-red-600 hover:bg-red-50">
+                  🔄 Try again
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {screen === 'valve-commands' && (
+          <div>
+            <h1 style={{ fontFamily: "'DM Serif Display',serif", color: '#106f30' }} className="text-2xl mb-1">Valve Commands</h1>
+            <p className="text-sm text-gray-500 mb-6">Control your valve device remotely.</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-4">
+              <div className="flex items-center justify-between mb-6">
+                {editingName ? (
+                  <div className="flex items-center gap-2 flex-1">
+                    <input value={tempName} onChange={e => setTempName(e.target.value)}
+                      className="flex-1 border border-gray-200 rounded-xl px-3 py-2 text-sm outline-none focus:border-green-500 focus:ring-2 focus:ring-green-100" autoFocus />
+                    <button onClick={() => { setValveName(tempName); setEditingName(false) }} className="px-3 py-2 rounded-xl text-sm font-semibold text-white" style={{ background: '#106f30' }}>Save</button>
+                    <button onClick={() => { setTempName(valveName); setEditingName(false) }} className="px-3 py-2 rounded-xl text-sm border border-gray-200 text-gray-600">Cancel</button>
+                  </div>
+                ) : (
+                  <>
+                    <div>
+                      <p className="text-xs text-gray-400 mb-0.5">Valve Name</p>
+                      <p className="text-xl font-bold" style={{ color: '#106f30' }}>{valveName}</p>
+                    </div>
+                    <button onClick={() => { setTempName(valveName); setEditingName(true) }} className="text-xs text-gray-400 hover:text-gray-600 border border-gray-200 px-3 py-1.5 rounded-xl hover:bg-gray-50">
+                      ✏️ Edit name
+                    </button>
+                  </>
+                )}
+              </div>
+              <div className="grid grid-cols-3 gap-2 mb-6">
+                {[['UID', uid.slice(0, 10) + '…'], ['Address', address], ['Channel', channel]].map(([l, v]) => (
+                  <div key={l} className="bg-gray-50 rounded-xl px-3 py-2 text-center">
+                    <p className="text-xs text-gray-400">{l}</p>
+                    <p className="text-xs font-mono font-semibold text-gray-700 mt-0.5">{v}</p>
+                  </div>
+                ))}
+              </div>
+              <div className={`rounded-xl px-4 py-4 mb-6 text-center transition-all ${
+                valveStatus === 'open' ? 'bg-green-50 border border-green-200' :
+                valveStatus === 'closed' ? 'bg-red-50 border border-red-200' :
+                valveStatus === 'sending' ? 'bg-yellow-50 border border-yellow-200' :
+                'bg-gray-50 border border-gray-200'
+              }`}>
+                <p className="text-3xl mb-1">
+                  {valveStatus === 'open' ? '💧' : valveStatus === 'closed' ? '🔒' : valveStatus === 'sending' ? '📡' : '⏸️'}
+                </p>
+                <p className={`text-base font-bold ${
+                  valveStatus === 'open' ? 'text-green-700' : valveStatus === 'closed' ? 'text-red-700' :
+                  valveStatus === 'sending' ? 'text-yellow-700' : 'text-gray-400'
+                }`}>
+                  {valveStatus === 'open' ? 'Valve Opened' : valveStatus === 'closed' ? 'Valve Closed' :
+                   valveStatus === 'sending' ? 'Sending command…' : 'Idle — waiting for command'}
+                </p>
+                {batteryVoltage && (
+                  <div className="mt-2 inline-flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-3 py-1">
+                    <span className="text-sm">🔋</span>
+                    <span className="text-xs font-semibold text-gray-700">{batteryVoltage} V</span>
+                  </div>
+                )}
+                {lastResponse && <p className="text-xs font-mono text-gray-400 mt-2 break-all">{lastResponse}</p>}
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <button onClick={() => sendValveCommand('01')} disabled={valveStatus === 'sending'}
+                  className="py-5 rounded-2xl text-white font-bold text-lg transition-all hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed flex flex-col items-center gap-1 shadow-sm"
+                  style={{ background: 'linear-gradient(135deg,#106f30,#1a9e4a)' }}>
+                  <span className="text-3xl">💧</span><span>ON</span>
+                  <span className="text-xs font-normal opacity-75">Open valve</span>
+                </button>
+                <button onClick={() => sendValveCommand('00')} disabled={valveStatus === 'sending' || !mqttConnected}
+                  className="py-5 rounded-2xl text-white font-bold text-lg transition-all hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed flex flex-col items-center gap-1 shadow-sm"
+                  style={{ background: 'linear-gradient(135deg,#dc2626,#ef4444)' }}>
+                  <span className="text-3xl">🔒</span><span>OFF</span>
+                  <span className="text-xs font-normal opacity-75">Close valve</span>
+                </button>
+              </div>
+              {!mqttConnected && <p className="text-xs text-center text-red-500 mt-3">🔴 MQTT disconnected — reconnect to control valve</p>}
+              <div className="mt-4 text-center">
+                <p className="text-xs text-gray-400">
+                  Publish → <span className="font-mono">{uid}COMMAND</span> · Subscribe → <span className="font-mono">{uid}STATUS</span>
+                </p>
+              </div>
+            </div>
+            <button onClick={resetAll} className="w-full py-2.5 rounded-xl text-sm font-semibold border border-gray-200 text-gray-600 hover:bg-gray-50">
+              + Add another valve
+            </button>
+          </div>
+        )}
+
+      </div>
+    </div>
+  )
+}
+
+function StepIcon({ state, id }) {
+  const icons = { 1: '🗄️', 2: '📡', 3: '📶', 4: '✅' }
+  if (state === 'loading') return (
+    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: '#fef9c3' }}>
+      <svg className="animate-spin w-4 h-4" style={{ color: '#d97706' }} viewBox="0 0 24 24" fill="none">
+        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+      </svg>
+    </div>
+  )
+  if (state === 'done') return (
+    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-bold" style={{ background: '#106f30' }}>✓</div>
+  )
+  if (state === 'error') return (
+    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-bold bg-red-500">✕</div>
+  )
+  return (
+    <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 text-lg bg-gray-100">{icons[id]}</div>
+  )
+}

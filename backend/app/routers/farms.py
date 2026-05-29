@@ -12,6 +12,7 @@ from app.models.role import RolePermission
 from app.services.auth_service import get_current_user
 import paho.mqtt.publish as publish
 from typing import Optional
+from app.services.audit_logger import log_audit
 
 router = APIRouter(prefix="/farms", tags=["Farms"])
 bearer = HTTPBearer()
@@ -345,6 +346,20 @@ async def send_motor_command(
         "uid":           uid,
     })
 
+    
+    # Write command to DB so simulator picks it up immediately
+    try:
+        import psycopg as _pg
+        with _pg.connect("postgresql://khuser:KHdb%4026@localhost:5432/kh_business") as _conn:
+            with _conn.cursor() as _cur:
+                _cur.execute(
+                    "INSERT INTO valve_commands (uid, command, command_by, created_at) VALUES (%s,%s,%s,NOW())",
+                    (uid, body.command, user.full_name)
+                )
+            _conn.commit()
+    except Exception as _e:
+        pass  # MQTT still sent, DB write is best-effort
+
     try:
         publish.single(
             topic,
@@ -353,7 +368,36 @@ async def send_motor_command(
             port=1883,
             qos=1,
         )
+        # ── Audit log — success ──
+        await log_audit(
+            db             = db,
+            user_id        = str(user.user_id),
+            customer_id    = str(user.customer_id),
+            action         = f"Motor {'ON' if body.command == 'on' else 'OFF'} command sent",
+            action_category= "command",
+            resource_type  = "device",
+            resource_id    = uid,
+            device_uid     = uid,
+            command_name   = f"Motor {'ON' if body.command == 'on' else 'OFF'}",
+            new_value      = body.command,
+            status         = "success",
+        )
     except Exception as e:
+        # ── Audit log — failure ──
+        await log_audit(
+            db             = db,
+            user_id        = str(user.user_id),
+            customer_id    = str(user.customer_id),
+            action         = f"Motor {'ON' if body.command == 'on' else 'OFF'} command failed",
+            action_category= "command",
+            resource_type  = "device",
+            resource_id    = uid,
+            device_uid     = uid,
+            command_name   = f"Motor {'ON' if body.command == 'on' else 'OFF'}",
+            new_value      = body.command,
+            status         = "failed",
+            failure_reason = str(e),
+        )
         raise HTTPException(status_code=500, detail=f"MQTT publish failed: {str(e)}")
 
     return {

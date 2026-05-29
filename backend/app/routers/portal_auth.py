@@ -1,0 +1,173 @@
+import uuid
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import text
+from pydantic import BaseModel
+from app.database import get_db
+from app.services.otp_service import generate_otp, create_and_store_otp, verify_otp
+from app.services.sms_service import send_otp_sms
+from app.utils.hashing import hash_password, verify_password
+from app.utils.jwt import create_access_token, create_refresh_token
+
+router = APIRouter(prefix="/portal", tags=["Portal Auth"])
+
+
+class PortalRegisterRequest(BaseModel):
+    full_name: str
+    phone:     str
+
+
+class PortalVerifyOtpRequest(BaseModel):
+    phone: str
+    otp:   str
+
+
+class PortalSetPasswordRequest(BaseModel):
+    phone:     str
+    otp:       str
+    password:  str
+    full_name: str
+
+
+class PortalLoginRequest(BaseModel):
+    phone:    str
+    password: str
+
+
+@router.post("/register")
+async def portal_register(
+    body: PortalRegisterRequest,
+    db:   AsyncSession = Depends(get_db),
+):
+    result = await db.execute(
+        text("SELECT portal_user_id FROM portal_users WHERE phone = :phone"),
+        {"phone": body.phone}
+    )
+    existing = result.mappings().first()
+    if existing:
+        raise HTTPException(status_code=400, detail="Phone number already registered. Please sign in.")
+
+    otp = await create_and_store_otp(body.phone, purpose="portal_registration")
+    await send_otp_sms(body.phone, otp)
+    return {"message": "OTP sent to your phone", "phone": body.phone}
+
+
+@router.post("/verify-otp")
+async def portal_verify_otp(
+    body: PortalVerifyOtpRequest,
+    db:   AsyncSession = Depends(get_db),
+):
+    valid = await verify_otp(body.phone, body.otp, purpose="portal_registration")
+    if not valid:
+        raise HTTPException(status_code=400, detail="Invalid or expired OTP")
+    return {"message": "OTP verified", "phone": body.phone}
+
+
+@router.post("/set-password")
+async def portal_set_password(
+    body: PortalSetPasswordRequest,
+    db:   AsyncSession = Depends(get_db),
+):
+    valid = await verify_otp(body.phone, body.otp, purpose="portal_registration")
+    if not valid:
+        raise HTTPException(status_code=400, detail="Invalid or expired OTP")
+
+    if len(body.password) < 8:
+        raise HTTPException(status_code=400, detail="Password must be at least 8 characters")
+
+    hashed = hash_password(body.password)
+
+    result = await db.execute(
+        text("SELECT portal_user_id FROM portal_users WHERE phone = :phone"),
+        {"phone": body.phone}
+    )
+    existing = result.mappings().first()
+
+    if existing:
+        await db.execute(
+            text("""
+                UPDATE portal_users
+                SET password_hash = :pwd, phone_verified = true, updated_at = now()
+                WHERE phone = :phone
+            """),
+            {"pwd": hashed, "phone": body.phone}
+        )
+    else:
+        await db.execute(
+            text("""
+                INSERT INTO portal_users (
+                    portal_user_id, full_name, phone, password_hash,
+                    phone_verified, is_active, created_at, updated_at
+                ) VALUES (
+                    :user_id, :full_name, :phone, :pwd,
+                    true, true, now(), now()
+                )
+            """),
+            {
+                "user_id":   str(uuid.uuid4()),
+                "full_name": body.full_name,
+                "phone":     body.phone,
+                "pwd":       hashed,
+            }
+        )
+
+    await db.commit()
+    return {"message": "Account created successfully. Please sign in."}
+
+
+@router.post("/login")
+async def portal_login(
+    body: PortalLoginRequest,
+    db:   AsyncSession = Depends(get_db),
+):
+# Check portal_users first
+    result = await db.execute(
+        text("""
+            SELECT portal_user_id AS user_id, full_name, phone,
+                   password_hash, is_active,
+                   false AS bypass_org_scope, null AS customer_id,
+                   ticket_view_permission
+            FROM portal_users WHERE phone = :phone        """),
+        {"phone": body.phone}
+    )
+    user = result.mappings().first()
+    is_portal_user = True
+
+    # Fall back to main users for admins
+    if not user:
+        result = await db.execute(
+            text("""
+                SELECT u.user_id, u.full_name, u.phone,
+                       u.password_hash, true as is_active,
+                       u.bypass_org_scope, u.customer_id
+                FROM users u WHERE u.phone = :phone            """),
+            {"phone": body.phone}
+        )
+        user = result.mappings().first()
+        is_portal_user = False
+
+    if not user:
+        raise HTTPException(status_code=401, detail="Phone number not found. Please register first.")
+    if not user["is_active"]:
+        raise HTTPException(status_code=401, detail="Account is inactive.")
+    if not user["password_hash"]:
+        raise HTTPException(status_code=401, detail="Password not set. Please register first.")
+    if not verify_password(body.password, user["password_hash"]):
+        raise HTTPException(status_code=401, detail="Incorrect password")
+
+    token_data = {
+        "sub":              str(user["user_id"]),
+        "customer_id":      str(user["customer_id"]) if user["customer_id"] else None,
+        "bypass_org_scope": bool(user.get("ticket_view_permission", 0)),    }
+
+    return {
+        "access_token":  create_access_token(token_data),
+        "refresh_token": create_refresh_token(token_data),
+        "user": {
+            "user_id":          str(user["user_id"]),
+            "full_name":        user["full_name"],
+            "phone":            user["phone"],
+            "customer_id":      str(user["customer_id"]) if user["customer_id"] else None,
+            "bypass_org_scope": bool(user.get("ticket_view_permission", 0)),
+            "permissions":      {"services_manage": 1} if user.get("ticket_view_permission", 0) == 1 else {},        }
+    }

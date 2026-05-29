@@ -9,6 +9,7 @@ from datetime import date, datetime
 from app.database import get_db, get_sensor_db
 from app.models.role import RolePermission
 from app.services.auth_service import get_current_user
+from app.services.audit_logger import log_audit
 
 router = APIRouter(prefix="/assign", tags=["Assign"])
 bearer = HTTPBearer()
@@ -389,6 +390,21 @@ async def assign_device(
     )
     await sensor_db.commit()
 
+    # Audit log — device assigned
+    await log_audit(
+        db              = db,
+        user_id         = str(user.user_id),
+        customer_id     = str(user.customer_id),
+        action          = f"Device {body.uid} assigned to farm",
+        action_category = "command",
+        resource_type   = "installation",
+        resource_id     = installation_id,
+        device_uid      = body.uid,
+        command_name    = "Device Assignment",
+        new_value       = f"farm_id={body.farm_id}",
+        status          = "success",
+    )
+
     return {
         "message":         "Device assigned successfully",
         "installation_id": installation_id,
@@ -421,11 +437,17 @@ async def update_basic_settings(
     db: AsyncSession = Depends(get_db),
     sensor_db: AsyncSession = Depends(get_sensor_db),
 ):
-    await require_perm("settings_basic", credentials.credentials, db)
+    user = await require_perm("settings_basic", credentials.credentials, db)
 
     updates = {k: v for k, v in body.model_dump().items() if v is not None}
     if not updates:
         return {"message": "No changes to apply"}
+
+    # Fetch old values before updating for audit log
+    old_result = await sensor_db.execute(
+        text("SELECT * FROM starter_settings WHERE uid = :uid"), {"uid": uid}
+    )
+    old_settings = old_result.mappings().first()
 
     set_clause = ", ".join([f"{k} = :{k}" for k in updates.keys()])
     updates["uid"]        = uid
@@ -436,6 +458,25 @@ async def update_basic_settings(
         updates
     )
     await sensor_db.commit()
+
+    # Log each changed setting individually
+    for setting_key, new_val in {k: v for k, v in body.model_dump().items() if v is not None}.items():
+        old_val = old_settings[setting_key] if old_settings and setting_key in old_settings else None
+        await log_audit(
+            db              = db,
+            user_id         = str(user.user_id),
+            customer_id     = str(user.customer_id),
+            action          = f"Setting '{setting_key}' updated on device {uid}",
+            action_category = "setting_change",
+            resource_type   = "device",
+            resource_id     = uid,
+            device_uid      = uid,
+            setting_name    = setting_key,
+            old_value       = str(old_val) if old_val is not None else None,
+            new_value       = str(new_val),
+            status          = "success",
+        )
+
     return {"message": "Settings updated successfully"}
 
 

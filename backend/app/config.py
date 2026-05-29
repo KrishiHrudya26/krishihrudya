@@ -12,6 +12,13 @@ class Settings(BaseSettings):
     # Database — Sensor data (TimescaleDB)
     TIMESCALE_URL: str
 
+    # Database — Legacy cPanel MySQL (read-only)
+    LEGACY_DB_HOST: str
+    LEGACY_DB_PORT: int = 3306
+    LEGACY_DB_NAME: str
+    LEGACY_DB_USER: str
+    LEGACY_DB_PASSWORD: str
+
     # Redis
     REDIS_URL: str
 

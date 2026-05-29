@@ -15,6 +15,7 @@ import os
 import sys
 import time
 import uuid
+import json as _json
 import logging
 import paho.mqtt.client as mqtt
 import psycopg
@@ -162,12 +163,19 @@ def on_message(client, userdata, msg):
         try:
             with get_conn() as conn:
                 with conn.cursor() as cur:
+                    _nb = len(payload.encode()) + 250
+                    _sb = len(payload.encode())
+                    _m  = _json.dumps({
+                        "network_bytes": _nb,
+                        "storage_bytes": _sb,
+                    })
                     cur.execute("""
                         INSERT INTO valve_commands (
                             cmd_id, device_uid, command_string, command_type,
-                            pin_number, state, status, lora_string, created_at
-                        ) VALUES (%s, %s, %s, 'lora_raw', 0, 0, 'received', %s, now())
-                    """, (str(uuid.uuid4()), uid, payload, payload))
+                            pin_number, state, status, lora_string, created_at,
+                            data_metrics, metrics_source
+                        ) VALUES (%s, %s, %s, 'lora_raw', 0, 0, 'received', %s, now(), %s, %s)
+                    """, (str(uuid.uuid4()), uid, payload, payload, _m, "esp8266"))
                 conn.commit()
             log.info(f"[DB] Raw lora saved — topic:{topic} payload:{payload}")
         except Exception as e:
@@ -184,12 +192,19 @@ def on_message(client, userdata, msg):
         try:
             with get_conn() as conn:
                 with conn.cursor() as cur:
+                    _nb = len(payload.encode()) + 250
+                    _sb = len(payload.encode())
+                    _m  = _json.dumps({
+                        "network_bytes": _nb,
+                        "storage_bytes": _sb,
+                    })
                     cur.execute("""
                         INSERT INTO valve_commands (
                             cmd_id, device_uid, command_string, command_type,
-                            pin_number, state, status, lora_string, created_at
-                        ) VALUES (%s, %s, %s, 'mit_app_command', 0, 0, 'received', %s, now())
-                    """, (str(uuid.uuid4()), uid, payload, payload))
+                            pin_number, state, status, lora_string, created_at,
+                            data_metrics, metrics_source
+                        ) VALUES (%s, %s, %s, 'mit_app_command', 0, 0, 'received', %s, now(), %s, %s)
+                    """, (str(uuid.uuid4()), uid, payload, payload, _m, "mit_app"))
                 conn.commit()
             log.info(f"[DB] MIT App command saved — UID:{uid}")
         except Exception as e:

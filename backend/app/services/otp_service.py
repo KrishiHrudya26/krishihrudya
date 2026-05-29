@@ -23,3 +23,6 @@ async def verify_otp(identifier: str, otp: str, purpose: str) -> bool:
     if stored == otp:
         return True
     return False
+
+# Alias for compatibility with portal auth
+verify_otp_code = verify_otp

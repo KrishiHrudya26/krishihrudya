@@ -1412,3 +1412,61 @@ Traceback (most recent call last):
 ConnectionRefusedError: [Errno 111] Connection refused
 2026-04-30 19:48:25,826 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
 2026-04-30 19:48:25,828 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-05-06 06:11:57,616 [WORKER] INFO Shutting down worker...
+2026-05-06 06:11:58,163 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-05-06 06:11:58,164 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-05-09 06:03:51,360 [WORKER] INFO Shutting down worker...
+2026-05-09 06:03:51,894 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-05-09 06:03:51,895 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-05-11 11:05:04,058 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:05:04,130 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:05:18,760 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:05:18,773 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:05:33,735 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:05:33,748 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:05:48,759 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:05:48,770 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:06:03,763 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:06:03,773 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:06:18,752 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:06:18,761 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:06:33,759 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:06:33,771 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:06:48,752 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:06:48,761 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:07:03,747 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:07:03,759 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:07:18,757 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:07:18,769 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 11:07:33,775 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000001/telemetry — uid=00000000-0000-0000-0000-000000000001
+2026-05-11 11:07:33,787 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:25:26,184 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:25:26,194 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:25:41,180 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:25:41,189 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:25:56,159 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:25:56,169 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:29:14,347 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:29:14,359 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:29:29,329 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:29:29,340 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:29:44,336 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:29:44,345 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:29:59,325 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:29:59,338 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:30:14,336 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:30:14,345 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:30:29,389 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:30:29,401 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:30:44,384 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:30:44,393 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:30:59,451 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:30:59,462 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-11 15:31:14,372 [WORKER] INFO 📩 Received from kh/devices/00000000-0000-0000-0000-000000000002/telemetry — uid=00000000-0000-0000-0000-000000000002
+2026-05-11 15:31:14,387 [WORKER] ERROR ❌ DB write error: value too long for type character varying(20)
+2026-05-15 06:16:11,357 [WORKER] INFO Shutting down worker...
+2026-05-15 06:16:12,134 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-05-15 06:16:12,136 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry
+2026-05-20 06:59:30,685 [WORKER] INFO Shutting down worker...
+2026-05-20 06:59:31,288 [WORKER] INFO Starting telemetry worker — connecting to 127.0.0.1:1883
+2026-05-20 06:59:31,291 [WORKER] INFO Connected to EMQX — subscribing to $share/workers/kh/devices/+/telemetry

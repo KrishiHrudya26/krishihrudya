@@ -1,7 +1,12 @@
 import axios from 'axios'
 
+const isNative = window.location.hostname === 'localhost'
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: isNative
+    ? 'https://krishihrudya.duckdns.org/api'
+    : '/api',
+
   headers: { 'Content-Type': 'application/json' },
 })
 

@@ -7,6 +7,14 @@
     background-color: #f7ffd6;
     color: #1a1a1a;
     -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  p, span, div, td, th, label, input, select, textarea, button {
+    font-weight: 500;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
   }
 }
 
@@ -14,3 +22,9 @@
 ::-webkit-scrollbar-track { background: #f7ffd6; }
 ::-webkit-scrollbar-thumb { background: #106f30; border-radius: 3px; }
 input:focus, select:focus, textarea:focus { outline: none; }
+
+/* ── Mobile responsive tables ── */
+@media (max-width: 768px) {
+  table { font-size: 13px; }
+  th, td { padding: 8px 10px !important; }
+}

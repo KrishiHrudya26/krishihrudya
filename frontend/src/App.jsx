@@ -8,6 +8,9 @@ import ResetPassword from './pages/ResetPassword'
 import Dashboard from './pages/Dashboard'
 import Unauthorized from './pages/Unauthorized'
 import Register from './pages/Register'
+import ContentPage from "./pages/ContentPage";
+import BoreholeIntelligence from './pages/BoreholeIntelligence'
+import ValveSetup from './pages/ValveSetup'
 
 export default function App() {
   return (
@@ -21,9 +24,14 @@ export default function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/unauthorized" element={<Unauthorized />} />
+          <Route path="/content" element={<ContentPage />} />
           <Route path="/dashboard" element={
             <ProtectedRoute><Dashboard /></ProtectedRoute>
           } />
+          <Route path="/borewell-intelligence" element={
+            <ProtectedRoute><BoreholeIntelligence /></ProtectedRoute>
+          } />
+          <Route path="/valve" element={<ValveSetup />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

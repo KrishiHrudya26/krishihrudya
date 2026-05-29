@@ -70,10 +70,10 @@ export default function Permissions() {
   const enabledCount = Object.values(edited).filter(v => v === 1).length
 
   return (
-    <div className="flex gap-6 h-full">
+    <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
       {/* Left — Role list */}
-      <div className="w-56 flex-shrink-0">
-        <h1 style={{ fontFamily: "'DM Serif Display', serif", color: '#106f30' }} className="text-2xl mb-4">
+      <div style={{ width: '100%', maxWidth: '220px', flexShrink: 0 }}>
+        <h1 style={{ fontFamily: "'DM Serif Display', serif", color: '#106f30', fontSize: '24px', marginBottom: '16px' }}>
           Permissions
         </h1>
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
@@ -98,7 +98,7 @@ export default function Permissions() {
 
       {/* Right — Permission editor */}
       {selectedRole && (
-        <div className="flex-1 min-w-0">
+        <div style={{ flex: 1, minWidth: '280px' }}>
           <div className="flex items-center justify-between mb-4">
             <div>
               <h2 className="text-lg font-semibold text-gray-800">{selectedRole.name}</h2>
@@ -132,7 +132,8 @@ export default function Permissions() {
                     {perms.filter(p => edited[p] === 1).length}/{perms.length} enabled
                   </p>
                 </div>
-                <div className="p-4 grid grid-cols-2 gap-3">
+                <div style={{ padding: '16px', display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px' }}>
                   {perms.map(perm => {
                     const isOn = edited[perm] === 1
                     const label = data.permission_labels[perm] || perm

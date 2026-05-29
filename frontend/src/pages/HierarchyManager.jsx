@@ -102,10 +102,14 @@ export default function HierarchyManager() {
     detail?.hierarchy?.nodes?.filter(n => n.level_id === levelId && !n.parent_id) || []
 
   return (
-    <div className="flex gap-6">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+
+      {/* Mobile: stack vertically. Desktop: side by side */}
+      <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
+
       {/* Left — Customer list */}
-      <div className="w-64 flex-shrink-0">
-        <h1 style={{ fontFamily: "'DM Serif Display', serif", color: '#106f30' }} className="text-2xl mb-4">
+      <div style={{ width: '100%', maxWidth: '260px', flexShrink: 0 }}>
+        <h1 style={{ fontFamily: "'DM Serif Display', serif", color: '#106f30', fontSize: '24px', marginBottom: '16px' }}>
           Hierarchy
         </h1>
         <input placeholder="Search customers..."
@@ -134,13 +138,13 @@ export default function HierarchyManager() {
       </div>
 
       {/* Right — Hierarchy editor */}
+      <div style={{ flex: 1, minWidth: 0, minWidth: '280px' }}>
       {selected ? (
-        <div className="flex-1 min-w-0">
-          {detailLoading ? (
+          detailLoading ? (
             <div className="p-12 text-center text-gray-400">Loading hierarchy...</div>
           ) : detail && (
             <>
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-6 flex-wrap gap-2">
                 <div>
                   <h2 className="text-lg font-semibold text-gray-800">{detail.cust_name}</h2>
                   <p className="text-sm text-gray-400 font-mono">{detail.customer_id}</p>
@@ -211,31 +215,31 @@ export default function HierarchyManager() {
                 <div className="flex flex-col gap-4">
                   <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
                     <h3 className="font-semibold text-gray-700 text-sm mb-3">Add Hierarchy Level</h3>
-                    <div className="flex gap-2">
+                    <div className="flex flex-col gap-2">
                       <input placeholder="Level name (e.g. Zone, Division, Ward)"
                         value={newLevel.name}
                         onChange={e => setNewLevel(l => ({ ...l, name: e.target.value }))}
-                        className="flex-1 px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none" />
+                        className="w-full px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none" />
                       <div className="flex items-center gap-2">
                         <span className="text-xs text-gray-500">Order:</span>
                         <input type="number" min={1} value={newLevel.level_order}
                           onChange={e => setNewLevel(l => ({ ...l, level_order: parseInt(e.target.value) || 1 }))}
-                          className="w-16 px-2 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none" />
+                          className="w-20 px-2 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none" />
+                        <button onClick={handleAddLevel}
+                          className="flex-1 px-4 py-2 rounded-xl text-white text-sm font-medium hover:opacity-90"
+                          style={{ background: '#106f30' }}>
+                          Add Level
+                        </button>
                       </div>
-                      <button onClick={handleAddLevel}
-                        className="px-4 py-2 rounded-xl text-white text-sm font-medium hover:opacity-90"
-                        style={{ background: '#106f30' }}>
-                        Add Level
-                      </button>
                     </div>
                   </div>
 
                   <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
                     <h3 className="font-semibold text-gray-700 text-sm mb-3">Add Node</h3>
-                    <div className="flex gap-2 flex-wrap">
+                    <div className="flex flex-col gap-2">
                       <select value={newNode.level_id}
                         onChange={e => setNewNode(n => ({ ...n, level_id: e.target.value }))}
-                        className="flex-1 min-w-32 px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none bg-white">
+                        className="w-full px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none bg-white">
                         <option value="">Select level *</option>
                         {detail.hierarchy?.levels?.map(l => (
                           <option key={l.level_id} value={l.level_id}>{l.name}</option>
@@ -243,7 +247,7 @@ export default function HierarchyManager() {
                       </select>
                       <select value={newNode.parent_id}
                         onChange={e => setNewNode(n => ({ ...n, parent_id: e.target.value }))}
-                        className="flex-1 min-w-32 px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none bg-white">
+                        className="w-full px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none bg-white">
                         <option value="">No parent (root node)</option>
                         {detail.hierarchy?.nodes?.map(n => (
                           <option key={n.node_id} value={n.node_id}>{n.name}</option>
@@ -252,9 +256,9 @@ export default function HierarchyManager() {
                       <input placeholder="Node name *"
                         value={newNode.name}
                         onChange={e => setNewNode(n => ({ ...n, name: e.target.value }))}
-                        className="flex-1 min-w-40 px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none" />
+                        className="w-full px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:border-[#106f30] focus:outline-none" />
                       <button onClick={handleAddNode}
-                        className="px-4 py-2 rounded-xl text-white text-sm font-medium hover:opacity-90"
+                        className="w-full px-4 py-2 rounded-xl text-white text-sm font-medium hover:opacity-90"
                         style={{ background: '#106f30' }}>
                         Add Node
                       </button>
@@ -263,16 +267,17 @@ export default function HierarchyManager() {
                 </div>
               )}
             </>
-          )}
-        </div>
+          )
       ) : (
-        <div className="flex-1 flex items-center justify-center text-gray-400">
+        <div className="flex items-center justify-center text-gray-400 py-16">
           <div className="text-center">
             <p className="text-4xl mb-3">🌿</p>
             <p className="text-sm">Select a customer to view and edit its hierarchy</p>
           </div>
         </div>
       )}
+      </div>
+      </div>
     </div>
   )
 }

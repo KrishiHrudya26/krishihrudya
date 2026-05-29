@@ -3,6 +3,39 @@ import { useAuth } from '../context/AuthContext'
 import api from '../services/api'
 import toast from 'react-hot-toast'
 
+const PERMISSION_LABELS = {
+  dashboard_access: 'Dashboard', reports_view: 'View Reports', reports_export: 'Export Reports',
+  reports_query: 'Query Reports', users_add: 'Add Users', users_edit: 'Edit Users',
+  users_delete: 'Delete Users', roles_add: 'Add Roles', roles_edit: 'Edit Roles',
+  roles_delete: 'Delete Roles', customers_add: 'Add Customers', customers_edit: 'Edit Customers',
+  customers_delete: 'Delete Customers', access_tokens_assign: 'Access Tokens',
+  role_permissions_assign: 'Manage Permissions', devices_assign: 'Assign Devices',
+  devices_edit: 'Edit Devices', devices_delete: 'Delete Devices', hierarchy_view: 'View Hierarchy',
+  hierarchy_manage: 'Manage Hierarchy', farms_manage: 'Manage Farms', settings_basic: 'Basic Settings',
+  settings_advanced: 'Advanced Settings', analytics_access: 'Analytics', motor_control: 'Motor Control',
+  event_logs_view: 'Event Logs', products_add: 'Products', categories_manage: 'Categories',
+  products_test_status: 'Test Status', meta_tables_manage: 'Meta Tables', dealer_manage: 'Dealers',
+  commission_approve: 'Commissions', audit_logs_view: 'Audit Logs', notifications_manage: 'Notifications',
+  sim_manage: 'SIM Database', services_manage: 'Manage Services', services_view: 'View Services',
+  orders_manage: 'Orders', content_manage: 'Content', installations_manage: 'Installations',
+}
+
+function PermissionsSummary() {
+  const { permissions } = useAuth()
+  const enabled = Object.entries(permissions).filter(([, v]) => v === 1).map(([k]) => k)
+  if (enabled.length === 0)
+    return <p className="text-xs text-gray-400 italic">No permissions assigned.</p>
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {enabled.map(k => (
+        <span key={k} className="px-2.5 py-1 rounded-full text-xs font-medium bg-green-50 text-green-700 border border-green-200">
+          {PERMISSION_LABELS[k] || k.replace(/_/g, ' ')}
+        </span>
+      ))}
+    </div>
+  )
+}
+
 const CROP_TYPES = [
   'Rice', 'Wheat', 'Maize', 'Sugarcane', 'Cotton', 'Groundnut',
   'Sunflower', 'Soybean', 'Tomato', 'Onion', 'Potato', 'Banana',
@@ -145,17 +178,18 @@ export default function MyProfile() {
         </div>
 
         {/* Quick info strip */}
-        <div className="grid grid-cols-3 gap-4 mt-5 pt-5 border-t border-gray-100">
-          <div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px',
+          marginTop: '20px', paddingTop: '20px', borderTop: '1px solid #f3f4f6' }}>
+          <div style={{ minWidth: '140px', flex: 1 }}>
             <p className="text-xs text-gray-400 mb-0.5">Email</p>
-            <p className="text-sm text-gray-700">{profile.email || '—'}</p>
+            <p className="text-sm text-gray-700" style={{ wordBreak: 'break-all' }}>{profile.email || '—'}</p>
             {profile.email && (
               <span className={`text-xs ${profile.email_verified ? 'text-green-600' : 'text-amber-600'}`}>
                 {profile.email_verified ? '✅ Verified' : '⚠ Not verified'}
               </span>
             )}
           </div>
-          <div>
+          <div style={{ minWidth: '140px', flex: 1 }}>
             <p className="text-xs text-gray-400 mb-0.5">Phone</p>
             <p className="text-sm text-gray-700">{profile.phone || '—'}</p>
             {profile.phone && (
@@ -164,7 +198,7 @@ export default function MyProfile() {
               </span>
             )}
           </div>
-          <div>
+          <div style={{ minWidth: '140px', flex: 1 }}>
             <p className="text-xs text-gray-400 mb-0.5">Last Login</p>
             <p className="text-sm text-gray-700">
               {profile.last_login_at
@@ -366,6 +400,12 @@ export default function MyProfile() {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              {/* Permissions */}
+              <div className="border-t border-gray-100 pt-4">
+                <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3">Your Permissions</p>
+                <PermissionsSummary roleId={profile.role?.role_id} />
               </div>
             </div>
           )}

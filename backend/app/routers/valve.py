@@ -1,5 +1,6 @@
 import uuid
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
+import json as _json
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.responses import PlainTextResponse
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -44,6 +45,7 @@ def parse_command_string(cmd: str):
 # ── 1. Queue a command (from dashboard / MIT App POST) ────
 @router.post("/command")
 async def queue_valve_command(
+    request: Request,
     body: ValveCommand,
     credentials: HTTPAuthorizationCredentials = Depends(bearer),
     db: AsyncSession = Depends(get_db),
@@ -66,16 +68,22 @@ async def queue_valve_command(
         command_string = build_command_string(pin, address, state)
 
     cmd_id = str(uuid.uuid4())
+    raw_body = await request.body()
+    network_bytes = len(raw_body)
+    storage_bytes = len(_json.dumps({
+        "cmd_id": cmd_id, "device_uid": body.device_uid,
+        "command_string": command_string, "command_type": body.command_type,
+    }).encode())
     await db.execute(
         text("""
             INSERT INTO valve_commands (
                 cmd_id, device_uid, command_string, command_type,
                 pin_number, address, state, sent_by,
-                status, created_at
+                status, created_at, data_metrics
             ) VALUES (
                 :cmd_id, :device_uid, :command_string, :command_type,
                 :pin_number, :address, :state, :sent_by,
-                'pending', now()
+                'pending', now(), :data_metrics
             )
         """),
         {
@@ -87,6 +95,12 @@ async def queue_valve_command(
             "address":        address,
             "state":          state,
             "sent_by":        str(user.user_id),
+            "data_metrics":   _json.dumps({
+                "network_bytes": network_bytes,
+                "storage_bytes": storage_bytes,
+                "direction": "inbound",
+                "source": "dashboard"
+            }),
         }
     )
     await db.commit()
@@ -133,13 +147,24 @@ async def poll_command(
         return "NONE"
 
     # Mark as sent
+    # Mark as sent
+    poll_network_bytes = len(row["command_string"].encode())
     await db.execute(
         text("""
             UPDATE valve_commands
-            SET status = 'sent', sent_at = now()
+            SET status = 'sent', sent_at = now(),
+                data_metrics = :metrics
             WHERE cmd_id = :cmd_id
         """),
-        {"cmd_id": str(row["cmd_id"])}
+        {
+            "cmd_id": str(row["cmd_id"]),
+            "metrics": _json.dumps({
+                "network_bytes": poll_network_bytes,
+                "storage_bytes": poll_network_bytes,
+                "direction": "outbound",
+                "source": "server→esp8266"
+            })
+        }
     )
     await db.commit()
 
@@ -176,22 +201,30 @@ async def esp_report(
     )
 
     # Log the device report
+    report_query = f"uid={uid}&state={state}&pin={pin}"
+    report_cmd   = f"DEVICE_REPORT:pin={pin},state={state}"
     await db.execute(
         text("""
             INSERT INTO valve_commands (
                 cmd_id, device_uid, command_string, command_type,
-                pin_number, state, status, created_at
+                pin_number, state, status, created_at, data_metrics
             ) VALUES (
                 :cmd_id, :uid, :cmd_str, 'device_report',
-                :pin, :state, 'acknowledged', now()
+                :pin, :state, 'acknowledged', now(), :data_metrics
             )
         """),
         {
-            "cmd_id":  str(uuid.uuid4()),
-            "uid":     uid,
-            "cmd_str": f"DEVICE_REPORT:pin={pin},state={state}",
-            "pin":     pin,
-            "state":   state,
+            "cmd_id":      str(uuid.uuid4()),
+            "uid":         uid,
+            "cmd_str":     report_cmd,
+            "pin":         pin,
+            "state":       state,
+            "data_metrics": _json.dumps({
+                "network_bytes": len(report_query.encode()),
+                "storage_bytes": len(report_cmd.encode()),
+                "direction": "inbound",
+                "source": "esp8266"
+            }),
         }
     )
     await db.commit()
@@ -298,21 +331,29 @@ async def device_status_report(
     GET /valve/device-status?uid=123456789012345&valve=1&battery=3.75
     Stores in DB and returns plain text ACK.
     """
+    status_query = f"uid={uid}&valve={valve}&battery={battery}"
+    status_cmd   = f"<<{valve}.{battery}>>"
     await db.execute(
         text("""
             INSERT INTO valve_commands (
                 cmd_id, device_uid, command_string, command_type,
-                pin_number, state, status, created_at
+                pin_number, state, status, created_at, data_metrics
             ) VALUES (
                 :cmd_id, :uid, :cmd_str, 'device_status',
-                0, :valve, 'acknowledged', now()
+                0, :valve, 'acknowledged', now(), :data_metrics
             )
         """),
         {
-            "cmd_id":  str(uuid.uuid4()),
-            "uid":     uid,
-            "cmd_str": f"<<{valve}.{battery}>>",
-            "valve":   valve,
+            "cmd_id":      str(uuid.uuid4()),
+            "uid":         uid,
+            "cmd_str":     status_cmd,
+            "valve":       valve,
+            "data_metrics": _json.dumps({
+                "network_bytes": len(status_query.encode()),
+                "storage_bytes": len(status_cmd.encode()),
+                "direction": "inbound",
+                "source": "esp8266"
+            }),
         }
     )
     await db.commit()
